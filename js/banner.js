@@ -70,7 +70,7 @@ function handleChungwonMouseOut() {
 }
 
 function handleWorkerMouseOver() {
-    sanitaryWorkerSpan.style.background = 'linear-gradient(to top, transparent 22%, #40b5eb 22%, #40b5eb 85%, transparent 85%)';
+    sanitaryWorkerSpan.style.background = 'linear-gradient(to top, transparent 24%, #40b5eb 24%, #40b5eb 85%, transparent 85%)';
     sanitaryWorkerSpan.style.setProperty('--animate-duration', '0.5s');
     animateCSS("span#sanitary_worker", 'flipInX');
 

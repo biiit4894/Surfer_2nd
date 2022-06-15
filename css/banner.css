@@ -29,9 +29,10 @@
 
 a#chungwon,
 a#sanitary_worker {
+    color: #333333;
     font-weight: 400;
     text-decoration: none;
-    background: linear-gradient(to top, transparent 22%, #40b5eb 22%, #40b5eb 25%, transparent 25%) ;
+    background: linear-gradient(to top, transparent 24%, #40b5eb 24%, #40b5eb 27%, transparent 27%) ;
 }
 a:visited {
     color: #333333;

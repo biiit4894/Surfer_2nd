@@ -9,68 +9,288 @@
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/article/surfer_article.css">
-    
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <body>
-    <div id="top_container">
-        <!-- navbar html 불러오기 -->
-        <div data-include-path="../archive/navbar.html"></div>
-        <script>
+    <!-- navbar html 불러오기 -->
+    <div data-include-path="../archive/navbar.html"></div>
+    <script>
 
-            window.addEventListener('load', function () {
-                var allElements = document.getElementsByTagName('*');
-                Array.prototype.forEach.call(allElements, function (el) {
-                    var includePath = el.dataset.includePath;
-                    if (includePath) {
-                        var xhttp = new XMLHttpRequest();
-                        xhttp.onreadystatechange = function () {
-                            if (this.readyState == 4 && this.status == 200) {
-                                el.outerHTML = this.responseText;
-                            }
-                        };
-                        xhttp.open('GET', includePath, true);
-                        xhttp.send();
-                    }
-                });
+        window.addEventListener('load', function () {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function (el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
             });
+        });
 
-        </script>
+    </script>
 
-        <div id="content_container">
 
-            <!-- 랜딩페이지 : footer 아래쪽으로 가라고 다 height 50vh 먹여놓은 거라서 수정해도 괜찮음-->
-            <div id="banner" style="height: 50vh;">
+    <div id="toc_wrapper">
+        <div><a id="intro_toc" href="">들어가며</a></div><br>
+        <div><a id="part1_toc" href="">Part 1</a></div>
+        <div><a href="">1-1</a></div>
+        <div><a href="">1-2</a></div><br>
+        <div><a id="part2_toc" href="">Part 2</a></div>
+        <div><a href="">2-1</a></div>
+        <div><a href="">2-2</a></div><br>
+        <div><a id="part3_toc" href="">Part 3</a></div>
+        <div><a href="">3-1</a></div>
+        <div><a href="">3-2</a></div>
+        <div><a href="">3-3</a></div><br>
+        <div><a id="part4_toc" href="">Part 4</a></div>
+    </div>
 
+    <!--SNS 공유 버튼-->
+    <div id="share_btn_wrap">
+        <!-- <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">트위터</a>
+        <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">페이스북</a> -->
+        <a id="btnKakao" class="link-icon kakao" href="javascript:shareKakao();">공유하기</a>
+    </div>
+
+    <!-- 랜딩페이지 -->
+    <section>
+        <h2 id="banner_title">
+            보이지 않는 노동<br>
+            <span id="banner_title2">: 매일 50kg을 치우는 사람들</span>
+        </h2>
+        <h3 id="banner_title"></h3>
+        <!-- <div class="set">
+            <div><img src="../img/garbage1.png"></div>
+            <div><img src="../img/garbage1.png"></div>
+            <div><img src="../img/garbage1.png"></div>
+        </div> -->
+        <div class="set set2">
+            <div><img src="../img/garbage1.png"></div>
+            <div><img src="../img/garbage2_green.png"></div>
+            <div><img src="../img/garbage1.png"></div>
+            <div><img src="../img/garbage1.png"></div>
+        </div>
+        <div class="set set3">
+            <div><img src="../img/garbage2_green.png"></div>
+            <div><img src="../img/garbage2_green.png"></div>
+        </div>
+
+    </section>
+    <!-- <div id="banner">
+        <div id="banner_title">보이지 않는 노동</div>
+        <div id="banner_title2">: Invisible Work</div>
+    </div> -->
+
+    <!-- 들어가며 -->
+    <div id="intro" style="height: 1000px;">
+        <div id="article_title">들어가며</div>
+        <div id="intro_prgph1" style="width: 600px;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;우리 사회에는 보이지 않는 곳에서 일하는 여러 노동자들이 있습니다. 그 중 환경미화원의 노동은 우리의 시야에서 특히나 보이지 않습니다. 
+            모두가 잠든 밤, 환경미화원은 우리가 문앞에 내놓은 쓰레기 봉투를 조용히 수거합니다. 
+            그들의 노동이 보이지 않는 만큼 그들의 위험하고 열악한 업무 환경 또한 보이지 않습니다.<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;급증하는 폐기물 문제에는 환경 위험 뿐만 아니라 열악한 노동 환경이라는 난제가 여전히 남아 있습니다. SURFER는 이번 기획에서 그동안 보이지 않던 환경미화원의 산재사고에 대해 파헤쳐 보았습니다.</div>
+    </div>
+
+    <!-- Part 1. 어느 환경미화원의 죽음 -->
+    <div id="part1">
+        <div id="article_title" class="article_title_serif">Part 1.</div>
+        <div id="article_title">어느 환경미화원의 죽음</div>
+
+        <div class="article_title_small" id="article_title_small_serif">1</div>
+        <div class="article_title_small">환경미화원 사망사건 리포트</div>
+
+        <div class="part1_prgph_wrap" id="part1_prgph_wrap1">
+
+            <!--투명도 준 텍스트 상자는 width를 700으로 늘림-->
+            <div class="part1_prgph" id="part1_prgph1" style="width: 700px;">
+
+                <span class="part1_prgph1_cat" id="part1_prgph1_cat1">적재함 협착</span><br>
+
+                <div class="part1_txtbox" id="part1_txtbox1">
+                    <strong>2017년 11월 29일.</strong><br>
+                    광주광역시에서 23년간 환경미화원으로 근무한 <strong>노연수</strong> 씨(가명)가 적재함에 끼어 숨졌다.
+                </div><br>
+        
+                <div class="part1_txtbox">
+                    <strong>노연수</strong> 씨는 위생매립장에서 적재함과 열린 덮개 사이에서 잔여 쓰레기를 치우고 있었다.<br>
+                    쓰레기를 처리하다 갑자기 수거 차량의 덮개가 닫혔고 그의 머리가 끼었다. 
+                </div>
+
+                <div class="part1_txtbox">
+                    머리를 크게 다쳐 곧바로 병원으로 옮겨졌지만 그는 깨어나지 못했다.<br>
+                    사고 업체 관계자는 적재함과 덮개 사이에는 들어가지 못하게 막고 있다고 전했다.<br>
+                    기계가 오작동할 수 있기 때문이다. 
+                </div>
+
+                <div class="part1_txtbox" id="part1_txtbox4">
+                    그럼에도 불구하고 청소차량 안전 부주의로 인한 환경미화원의 안전 사고는 잇따르고 있다.
+                </div>
+
+                
             </div>
+        </div>
 
-            <!-- 들어가며 -->
-            <div id="intro" style="height: 50vh;">
-
-            </div>
-
-            <!-- Part 1. 어느 환경미화원의 죽음 -->
-            <div id="part1" style="height: 50vh;">
-
-            </div>
-
-            <!-- Part 2. 청소차의 위험성-->
-            <div id="part2" style="height: 50vh;">
-
-            </div>
-
-            <!-- Part 3. 무리한 작업량-->
-            <div id="part3" style="height: 50vh;">
-
-            </div>
-
-            <!-- Part 4. 환경미화원의 산재사고 막으려면-->
-            <div id="outro" style="height: 50vh;">
+        <div class="part1_prgph_wrap" id="part1_prgph_wrap2">
+            <!--투명도 준 텍스트 상자는 width를 700으로 늘림-->
+            <div class="part1_prgph"  style="width: 700px;">
+                <span class="part1_prgph1_cat" id="part1_prgph1_cat2">업무상 질병</span><br>
+                
+                <div class="part1_txtbox">
+                    <strong>2018년 11월 13일.</strong><br>
+                    <strong>이정현 씨</strong>(가명)가 폐암으로 숨을 거뒀다. <br>
+                    지난하고 길었던 10개월간의 산재 승인 심사가 통과된 다음 날이었다.
+                </div>
+                
+                <div class="part1_txtbox">
+                    <strong>이정현</strong> 씨는 순천에서 21년간 환경미화원으로 일했다.<br>
+                    슬레이트나 분진, 연탄 등을 옮기기도 했고 미세먼지가 심한 날에도 어김없이 출근했다.
+                </div>
+                
+                <div class="part1_txtbox">
+                    청소차에 매달려 배기관 매연과 씨름하기를 20년.<br>
+                    매일같이 들이키는 자동차 매연은 조금씩 황씨의 건강을 좀먹었고,<br>
+                    퇴직하고서야 폐암을 발견할 수 있었다. 
+                </div>
+                
+                <div class="part1_txtbox" id="part1_txtbox4"> 
+                    수술도 불가능한 4기였다.<br>
+                    회사에서 제공하는 건강 검진이 있었지만, 기본적인 수준에 그쳐 미리 폐암을 잡아낼 수 없었다.
+                </div>
 
             </div>
         </div>
+        
+        <div class="part1_prgph_wrap" id="part1_prgph_wrap3">
+
+            <!--투명도 준 텍스트 상자는 width를 700으로 늘림-->
+            <div class="part1_prgph"  style="width: 700px;">
+                <span class="part1_prgph1_cat" id="part1_prgph1_cat3">골절/떨어짐/교통사고</span><br>
+                
+                <div class="part1_txtbox">
+                    <strong>2020년 11월 6일.</strong><br>
+                    대구광역시 환경미화원 <strong>박정태</strong> 씨(가명)가 교통사고로 목숨을 잃었다.
+                </div>
+
+                <div class="part1_txtbox">
+                    <strong>박정태</strong> 씨는 음식물 쓰레기 수거원으로 일했다. 
+                    그는 그날도 여느 때와 다름없이 동료와 함께 다음 수거 장소로 이동하기 위해 청소차 뒷편에 매달려 신호를 기다리고 있었다.
+                </div>
+
+                <div class="part1_txtbox">
+                    그러던 중 음주운전자가 자신의 승용차로 음식물 쓰레기 수거 차량을 뒤에서 들이박았다. 
+                    당시 수거 차량 뒤쪽 발판에 서있던 <strong>박정태</strong> 씨는 충돌을 피하지 못하고 크게 다쳐 병원에 이송됐지만 결국 숨졌다.
+                </div>
+                
+                <div class="part1_txtbox">
+                    청소차 뒷발판은 환경미화원을 사지에 내몬다. 
+                    그러나 업무 시간 안에 담당 구역의 쓰레기를 모두 빠르게 수거하기 위해서는 작은 뒷발판에 매달릴 수 밖에 없다. 
+                    결국 그도 청소차 뒷발판의 위험성을 피하지 못했다.
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="article_title_small" id="article_title_small_serif">2</div>
+        <div class="article_title_small">환경미화원의 산재 현황 시각화</div>
+
+        <div class="part1_prgph" id="part1_prgph2" style="width: 600px;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;모든 국민은 그 보호하는 자녀에게 적어도 초등교육과 법률이 정하는 교육을 받게 할 의무를 진다. 대통령은 국무총리·국무위원·행정각부의 장
+            기타 법률이 정하는 공사의 직을 겸할 수 없다. 공무원은 국민전체에 대한 봉사자이며, 국민에 대하여 책임을 진다. 대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 제안된 헌법개정안은
+            대통령이 20일 이상의 기간 이를 공고하여야 한다. 공공필요에 의한 재산권의 수용·사용 또는 제한 및 그에 대한 보상은 법률로써 하되, 정당한 보상을 지급하여야 한다. 모든 국민은 양심의 자유를
+            가진다. 대한민국은 민주공화국이다. 이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.<br><br>
+        </div>
+        <div class='tableauPlaceholder' id='viz1654105150608' style='position: relative'><noscript><a href='#'><img alt='스토리 1 (2) ' src='https://public.tableau.com/static/images/ve/ver_16541044984820/12_1/1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views/ver_16541044984820/12_1?:language=ko-KR&:embed=true&publish=yes' /> <param name='toolbar' value='yes' /><param name='static_image' value='https://public.tableau.com/static/images/ve/ver_16541044984820/12_1/1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko-KR' /><param name='filter' value='publish=yes' /></object></div> <script type='text/javascript'> var divElement = document.getElementById('viz1654105150608'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width='1366px';vizElement.style.height='795px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement); </script>
+        <div class="part1_prgph" id="part1_prgph3" style="width: 600px;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;국가는 대외무역을 육성하며, 이를 규제·조정할 수 있다. 국가는 사회보장·사회복지의 증진에 노력할 의무를 진다. 헌법재판소의 조직과 운영 기타 필요한 사항은 법률로 정한다. 이 헌법시행 당시의
+            대법원장과 대법원판사가 아닌 법관은 제1항 단서의 규정에 불구하고 이 헌법에 의하여 임명된 것으로 본다.
+            모든 국민은 인간다운 생활을 할 권리를 가진다. 광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을
+            특허할 수 있다. 국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는 국무위원 또는 정부위원으로
+            하여금 출석·답변하게 할 수 있다.
+        </div>
     </div>
 
+    <!-- Part 2. 청소차의 위험성-->
+    <div id="part2" style="height: 1000px;">
+        <div id="article_title" class="article_title_serif">Part 2.</div>
+        <div id="article_title">청소차의 위험성</div>
+
+        <!--왼쪽에서 오른쪽으로 이동하는 청소차-->
+        <img id="car_fromleft" src="../img/car.png">
+        <img id="falling_worker" src="../img/falling_worker.png">
+
+        <div id="part2_quote">
+            <span id="part2_quote_mark">"</span>저도 발판에 매달리다가 발이 미끌어진 적 있죠.<br>
+            쓰레기 수거하다 교통사고 당하는 동료를 본 적도 있고요(예시)<span id="part2_quote_mark">"</span>
+        </div>
+    </div>
+
+    <!-- Part 3. 무리한 작업량-->
+    <div id="part3" style="height: 1000px;">
+        <div id="article_title" class="article_title_serif">Part 3.</div>
+        <div id="article_title">무리한 작업량</div>
+    </div>
+
+    <!-- Part 4. 환경미화원의 산재사고 막으려면-->
+    <div id="outro">
+        <div id="article_title" class="article_title_serif">Part 4.</div>
+        <div id="article_title">환경미화원의 산재사고 막으려면</div>
+        <div class="article_title_small">전문가 인터뷰 - 환경미화원의 열악한 노동환경을 개선할 해결책</div>
+        <div id="outro_prgph1" style="width: 600px;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;모든 국민은 그 보호하는 자녀에게 적어도 초등교육과 법률이 정하는 교육을 받게 할 의무를 진다. 대통령은 국무총리·국무위원·행정각부의 장
+            기타 법률이 정하는 공사의 직을 겸할 수 없다. 공무원은 국민전체에 대한 봉사자이며, 국민에 대하여 책임을 진다. 대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다.
+            제안된 헌법개정안은 대통령이 20일 이상의 기간 이를 공고하여야 한다. 공공필요에 의한 재산권의 수용·사용 또는 제한 및 그에 대한 보상은 법률로써 하되, 정당한 보상을 지급하여야 한다. 모든
+            국민은 양심의 자유를 가진다. 대한민국은 민주공화국이다. 이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다. 국가는 대외무역을 육성하며, 이를 규제·조정할 수
+            있다. 국가는 사회보장·사회복지의 증진에 노력할 의무를 진다. 헌법재판소의 조직과 운영 기타 필요한 사항은 법률로 정한다. 이 헌법시행 당시의 대법원장과 대법원판사가 아닌 법관은 제1항 단서의
+            규정에 불구하고 이 헌법에 의하여 임명된 것으로 본다.
+            모든 국민은 인간다운 생활을 할 권리를 가진다. 광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을
+            특허할 수 있다. 국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는 국무위원 또는 정부위원으로
+            하여금 출석·답변하게 할 수 있다.<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;모든 국민은 그 보호하는 자녀에게 적어도 초등교육과 법률이 정하는 교육을 받게 할 의무를 진다. 대통령은 국무총리·국무위원·행정각부의 장
+            기타 법률이 정하는 공사의 직을 겸할 수 없다. 공무원은 국민전체에 대한 봉사자이며, 국민에 대하여 책임을 진다. 대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 제안된 헌법개정안은
+            대통령이 20일 이상의 기간 이를 공고하여야 한다. 공공필요에 의한 재산권의 수용·사용 또는 제한 및 그에 대한 보상은 법률로써 하되, 정당한 보상을 지급하여야 한다. 모든 국민은 양심의 자유를
+            가진다. 대한민국은 민주공화국이다. 이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.
+            국가는 대외무역을 육성하며, 이를 규제·조정할 수 있다. 국가는 사회보장·사회복지의 증진에 노력할 의무를 진다. 헌법재판소의 조직과 운영 기타 필요한 사항은 법률로 정한다. 이 헌법시행 당시의
+            대법원장과 대법원판사가 아닌 법관은 제1항 단서의 규정에 불구하고 이 헌법에 의하여 임명된 것으로 본다. 모든 국민은 인간다운 생활을 할 권리를 가진다. 광물 기타 중요한
+            지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을 특허할 수 있다.
+            국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는 국무위원 또는 정부위원으로 하여금 출석·답변하게
+            할 수 있다.<br><br>
+        </div>
+        <div id="outro_prgph2" style="width: 600px;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;모든 국민은 그 보호하는 자녀에게 적어도 초등교육과 법률이 정하는 교육을 받게 할 의무를 진다. 대통령은 국무총리·국무위원·행정각부의 장
+            기타 법률이 정하는 공사의 직을 겸할 수 없다. 공무원은 국민전체에 대한 봉사자이며, 국민에 대하여 책임을 진다. 대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 제안된 헌법개정안은
+            대통령이 20일 이상의 기간 이를 공고하여야 한다. 공공필요에 의한 재산권의 수용·사용 또는 제한 및 그에 대한 보상은 법률로써 하되, 정당한 보상을 지급하여야 한다. 모든 국민은 양심의 자유를
+            가진다. 대한민국은 민주공화국이다. 이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.
+            국가는 대외무역을 육성하며, 이를 규제·조정할 수 있다. 국가는 사회보장·사회복지의 증진에 노력할 의무를 진다. 헌법재판소의 조직과 운영 기타 필요한 사항은 법률로 정한다. 이 헌법시행 당시의
+            대법원장과 대법원판사가 아닌 법관은 제1항 단서의 규정에 불구하고 이 헌법에 의하여 임명된 것으로 본다.
+            모든 국민은 인간다운 생활을 할 권리를 가진다. 광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을
+            특허할 수 있다. 국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는 국무위원 또는 정부위원으로
+            하여금 출석·답변하게 할 수 있다.
+        </div>
+    </div>
+
+    <!--toc_wrapper js-->
+    <script>
+        $(document).ready(function () {
+            var tmp = parseInt($("#toc_wrapper").css('top'));
+
+            $(window).scroll(function () {
+                var scrollTop = $(window).scrollTop();
+                var obj_position = scrollTop + tmp + "px";
+
+                $("#toc_wrapper").stop().animate({
+                    "top": obj_position
+                }, 500);
+
+            }).scroll();
+        });
+    </script>
     <!-- footer html 불러오기 -->
     <div data-include-path="../archive/footer.html"></div>
     <script>
@@ -93,6 +313,9 @@
         });
 
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

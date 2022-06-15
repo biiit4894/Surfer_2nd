@@ -1,5 +1,7 @@
 /* 최상단 navbar */
+
 #navbar {
+    z-index: 999;
     position: fixed;
     top: 0;
     left: 0;
