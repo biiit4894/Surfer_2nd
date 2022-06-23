@@ -180,50 +180,41 @@ section .set div:nth-child(8){
         opacity: 0;
         top: -80%;
         transform: scale(0.7) translateX(20px) rotate(0deg);
-        /* filter: ; */
     }
     10%
     {
         opacity: 1;
         transform: scale(0.7);
-        /* filter: ; */
     }
     20%
     {
         transform: scale(0.7) translateX(-20px) rotate(45deg);
-        /* filter: ; */
     }
     40%
     {
         transform: scale(0.7) translateX(-20px) rotate(90deg);
-        /* filter: ; */
     }
     60%
     {
         transform: scale(0.7) translateX(20px) rotate(180deg);
-        /* filter: ; */
     }
     80%
     {
         transform: scale(0.7) translateX(-20px) rotate(180deg);
-        filter: blur(0px);
     }
     100%
     {
         top: 110%;
         transform: scale(0.7) translateX(-20px) rotate(225deg);
-        filter: blur(0px);
     }
 }
 
 .set2 {
     transform: rotateY(180deg);
-    filter: blur(0px);
 }
 
 .set3 {
     transform: rotateX(180deg);
-    /* filter: ; */
 }
 
 /* 각 파트별 제목 */
@@ -327,9 +318,8 @@ section .set div:nth-child(8){
 .part1_txtbox {
     background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
-    padding: 35px 10px;
+    padding: 35px 25px;
     margin-bottom: 500px;
-    text-align: center;
 }
 
 
@@ -345,27 +335,36 @@ section .set div:nth-child(8){
     padding-top: 300px;
     background-color: black;
     color:white;
+    height: 3000px;
 }
 
 /* 내러티브 도입 - 청소차 */
 #car_fromleft {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 550px;
+    
+}
+#falling_worker {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    margin-top: -150px;
+    margin-left: 250px;
+}
+/* #car_fromleft {
     display: block;
     width: 550px;
     margin: 0 auto;
     margin-top: 100px;
     margin-left: 100px;
     animation: fadeInLeft 3s forwards;
-}
+} */
 /* 내러티브 도입 - 미화원*/
-#falling_worker {
-    float: right;
-    width: 300px;
-    margin-top: -40vh;  
-    margin-right: 30vh;  
-    animation: fadeInDrop 3s forwards;
-}
 
-@keyframes fadeInLeft {
+
+/* @keyframes fadeInLeft {
     0% {
         opacity: 0;
         transform: translate3d(0, 0, 0);
@@ -385,7 +384,7 @@ section .set div:nth-child(8){
         opacity: 1;
         transform: translate3d(-300%, 80%, 0);
     }
-}
+} */
 
 /* 내러티브 도입 - 인용구 */
 #part2_quote {
@@ -393,16 +392,33 @@ section .set div:nth-child(8){
     line-height: 140%;
     color: #000000;
     font-weight: 400;
-    padding: 20px 10px;
-    font-size: 20px;
+    padding: 18px;
+    font-size: 18px;
     position: absolute;
-    right: 10vw;
+    right: 250px;
 }
 
-.part2_quote_mark {
-    font-size: 30px;
+#part2_quote_mark {
+    font-size: 25px;
 }
 
+/* 산안 데이터 */
+#part2_data1 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 500px;
+}
+
+/* 작업과정 */
+#part2_problem {
+    margin-top: 400px;
+    text-align: center;
+}
+
+#part2_problem_car {
+    width: 800px;
+    cursor: pointer;
+}
 
 /*Part 3*/
 #part3 {
