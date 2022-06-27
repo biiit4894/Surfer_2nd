@@ -17,7 +17,8 @@ html {
 /* 우측 플로팅 목차 */
 #toc_wrapper {
     z-index: 999;
-    font-size: 14px;;
+    font-size: 14px;
+    ;
     position: absolute;
     width: 70px;
     height: 350px;
@@ -49,6 +50,7 @@ html {
     justify-content: space-between;
     align-items: center;
 }
+
 .link-icon {
     font-size: 14px;
     font-weight: 500;
@@ -129,81 +131,80 @@ section .set div {
     display: block;
 }
 
-section .set div:nth-child(1){
+section .set div:nth-child(1) {
     left: 20%;
     animation: animate 15s linear infinite;
     animation-delay: -7s;
 }
 
-section .set div:nth-child(2){
+section .set div:nth-child(2) {
     left: 50%;
     animation: animate 20s linear infinite;
     animation-delay: -5s;
 }
 
-section .set div:nth-child(3){
+section .set div:nth-child(3) {
     left: 70%;
     animation: animate 20s linear infinite;
     animation-delay: 0s;
 }
 
-section .set div:nth-child(4){
+section .set div:nth-child(4) {
     left: 0%;
     animation: animate 15s linear infinite;
     animation-delay: -5s;
 }
 
-section .set div:nth-child(5){
+section .set div:nth-child(5) {
     left: 85%;
     animation: animate 18s linear infinite;
     animation-delay: -10s;
 }
 
-section .set div:nth-child(6){
+section .set div:nth-child(6) {
     left: 0%;
     animation: animate 12s linear infinite;
 }
 
-section .set div:nth-child(7){
+section .set div:nth-child(7) {
     left: 15%;
     animation: animate 14s linear infinite;
 }
 
-section .set div:nth-child(8){
+section .set div:nth-child(8) {
     left: 60%;
     animation: animate 15s linear infinite;
 }
 
 @keyframes animate {
-    0%
-    {
+    0% {
         opacity: 0;
         top: -80%;
         transform: scale(0.7) translateX(20px) rotate(0deg);
     }
-    10%
-    {
+
+    10% {
         opacity: 1;
         transform: scale(0.7);
     }
-    20%
-    {
+
+    20% {
         transform: scale(0.7) translateX(-20px) rotate(45deg);
     }
-    40%
-    {
+
+    40% {
         transform: scale(0.7) translateX(-20px) rotate(90deg);
     }
-    60%
-    {
+
+    60% {
         transform: scale(0.7) translateX(20px) rotate(180deg);
     }
-    80%
-    {
+
+    80% {
         transform: scale(0.7) translateX(-20px) rotate(180deg);
     }
-    100%
-    {
+
+    100% {
         top: 110%;
         transform: scale(0.7) translateX(-20px) rotate(225deg);
     }
@@ -232,7 +233,7 @@ section .set div:nth-child(8){
     font-weight: 600;
 }
 
-.article_title_small{
+.article_title_small {
     font-size: 25px;
     display: flex;
     justify-content: center;
@@ -247,16 +248,16 @@ section .set div:nth-child(8){
     font-style: italic;
 }
 
-/*Intro*/
+/* 편집자주 */
 #intro {
     margin-top: 1000px;
-    background: linear-gradient(to bottom, transparent 75%,black);
+    background: linear-gradient(to bottom, transparent 75%, black);
 }
 
 /* Part 1. 어느 환경미화원의 죽음 */
 #part1 {
     background-color: black;
-    color:white;
+    color: white;
 }
 
 #intro_prgph1,
@@ -275,28 +276,28 @@ section .set div:nth-child(8){
 #part1_prgph_wrap1 {
     margin-top: 200px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-            url("../../img/cat1.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
+        url("../../img/cat1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #part1_prgph_wrap2 {
     margin-top: 400px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-            url("../../img/cat2.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
+        url("../../img/cat2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #part1_prgph_wrap3 {
     margin-top: 400px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-            url("../../img/cat3.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
+        url("../../img/cat3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .part1_prgph1_cat {
@@ -334,7 +335,7 @@ section .set div:nth-child(8){
 #part2 {
     padding-top: 300px;
     background-color: black;
-    color:white;
+    color: white;
     height: 3000px;
 }
 
@@ -344,8 +345,9 @@ section .set div:nth-child(8){
     margin: 0 auto;
     margin-top: 100px;
     width: 550px;
-    
+
 }
+
 #falling_worker {
     display: block;
     margin: 0 auto;
@@ -353,38 +355,7 @@ section .set div:nth-child(8){
     margin-top: -150px;
     margin-left: 250px;
 }
-/* #car_fromleft {
-    display: block;
-    width: 550px;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-left: 100px;
-    animation: fadeInLeft 3s forwards;
-} */
-/* 내러티브 도입 - 미화원*/
 
-
-/* @keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 0, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(100%, 0, 0);
-    }
-}
-
-@keyframes fadeInDrop {
-    0% {
-        opacity: 0;
-        transform: translate3d(-100%, 0%, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(-300%, 80%, 0);
-    }
-} */
 
 /* 내러티브 도입 - 인용구 */
 #part2_quote {
@@ -417,22 +388,101 @@ section .set div:nth-child(8){
 
 #part2_problem_car {
     width: 800px;
+}
+
+/* 청소차 부위별 문제점 */
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* 부위 클릭 시 flex로 변함. */
+    position: fixed;
+    z-index: 999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0);
+    /*rgba 지원 안될 경우 */
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    text-align: left;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
     cursor: pointer;
 }
+
 
 /*Part 3*/
 #part3 {
     padding-top: 300px;
     background-color: black;
-    color:white;
+    color: white;
+}
+
+#part3_work_per1 {
+    margin-top: 100px;
+}
+
+#part3_work_per1_title {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.part3_container {
+    margin-top: 10px;
+}
+
+#part3_work_per1_sign {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+#part3_work_per1_imgcontainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#img {
+}
+
+#part3_district {
+    /*flex로 인해 높이 지정해줘야 함*/
+    height: 130px;
+    margin-left: 10px;
 }
 
 /* outro */
 #outro {
     padding-top: 300px;
     margin-bottom: 300px;
-    background: linear-gradient(to top, transparent 80%,black);
+    background: linear-gradient(to top, transparent 80%, black);
 }
+
 #outro_prgph1,
 #outro_prgph2 {
     display: block;
