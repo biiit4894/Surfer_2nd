@@ -6,9 +6,11 @@
   <title>SURFER</title>
 
 
+  <link rel="stylesheet" href="../css/navbar.css" />
   <link rel="stylesheet" type="text/css" href="../css/surfer_archive.css">
   <link rel="stylesheet" type="text/css" href="../css/banner.css">
   <link rel="stylesheet" type="text/css" href="../css/ourwaves.css">
+  <link rel="stylesheet" type="text/css" href="../css/timeline.css">
   <link rel="stylesheet" type="text/css" href="../css/aboutUs.css">
 
 
@@ -23,32 +25,21 @@
 <body>
   <div id="top_container">
 
-    <!-- navbar html 불러오기 -->
-    <div data-include-path="navbar.html"></div>
-    <script>
+    <!-- navbar-->
+    <div id="navbar">
+      <div class="left_item">
+        <a class="linked_icon" href=""><img id="surfer_icon" href="" src="../img/sea-waves.png"></a>
+      </div>
+      <div class="center_items">
+        <a class="linked_icon" href="https://github.com/biiit4894/Surfer_2nd"><img id="github_icon"
+            src="../img/github.png"></a>
+        <a class="linked_icon" href=""><img id="notion_icon" href="" src="../img/notion.png"></a>
+      </div>
+    </div>
 
-      window.addEventListener('load', function () {
-        var allElements = document.getElementsByTagName('*');
-        Array.prototype.forEach.call(allElements, function (el) {
-          var includePath = el.dataset.includePath;
-          if (includePath) {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-              if (this.readyState == 4 && this.status == 200) {
-                el.outerHTML = this.responseText;
-              }
-            };
-            xhttp.open('GET', includePath, true);
-            xhttp.send();
-          }
-        });
-      });
+    <div id="content_container">
 
-    </script>
-
-<div id="content_container">
-
-  <!-- banner(랜딩페이지), scroll icon) -->
+      <!-- banner(랜딩페이지), scroll icon) -->
       <div id="banner" style="font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
       font-weight: 200;">
 
@@ -61,16 +52,15 @@
           조망하였습니다.</span><br>
         <span class="surfer_line4" style="opacity: 0;">데이터에 입각하여 주목받지 못한 이야기를 찾고, 누구나 즐길 수 있는 기사를 작성합니다.</span>
         <!-- <div id="scrolldowndiv"><a href="#archive" id="scrolldown">Surfer의 기사 구경하기</a></div> -->
-      
+
       </div>
-      <div class="scroll_icon_wrap" style="opacity: 0">
+      <!-- <div class="scroll_icon_wrap" style="opacity: 0">
         <a class="scroll_icon" href="#team-title-ourwaves">
           <span></span>
           <span></span>
           <span></span>
-          <!-- Scroll -->
         </a>
-      </div>
+      </div> -->
 
 
 
@@ -154,28 +144,43 @@
 
 
         <!-- Timeline. -->
-        <div data-include-path="timeline.html"></div>
-
-        <script>
-
-          window.addEventListener('load', function () {
-            var allElements = document.getElementsByTagName('*');
-            Array.prototype.forEach.call(allElements, function (el) {
-              var includePath = el.dataset.includePath;
-              if (includePath) {
-                var xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function () {
-                  if (this.readyState == 4 && this.status == 200) {
-                    el.outerHTML = this.responseText;
-                  }
-                };
-                xhttp.open('GET', includePath, true);
-                xhttp.send();
-              }
-            });
-          });
-
-        </script>
+        <div class="timeline">
+          <div class="category_title">Timeline.</div>
+          <span class="timeline_descrip">Our waves through time</span><br>
+          <section class="surfer_timeline">
+            <h1></h1>
+            <ol>
+              <li>
+                <div id="timeline_box_one">
+                  <time>2022.01</time>
+                  데이터 저널리즘 동아리 Surfer 결성
+                </div>
+              </li>
+              <li>
+                <div id="timeline_box_two">
+                  <time>2022.03.03</time>
+                  Surfer의 첫번째 기획 배포<br>
+                  '문 정부의 음성사서함, 해결하지 못한 메시지'
+                </div>
+              </li>
+              <li>
+                <div id="timeline_box_three">
+                  <time>2022.06.??</time>
+                  Surfer의 두번째 기획 배포<br>
+                  '환경미화원, 그 뒤편의 이야기들'
+                </div>
+              </li>
+              <li>
+                <div id="timeline_box_four">
+                  <time>2022.07~2022.09</time>
+                  <text>Coming Soon...</text>
+                </div>
+              </li>
+              <li></li>
+            </ol>
+          </section>
+          <!-- <img class="timeline_png_2" src="images/timeline-vertical.png"> -->
+        </div>
 
         <div class="container">
           <div>
@@ -255,27 +260,47 @@
     </div>
 
   </div>
-  <!-- footer html 불러오기 -->
-  <div data-include-path="footer.html"></div>
-  <script>
 
-    window.addEventListener('load', function () {
-      var allElements = document.getElementsByTagName('*');
-      Array.prototype.forEach.call(allElements, function (el) {
-        var includePath = el.dataset.includePath;
-        if (includePath) {
-          var xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-              el.outerHTML = this.responseText;
-            }
-          };
-          xhttp.open('GET', includePath, true);
-          xhttp.send();
-        }
-      });
+  <!--navbar js : 잘 안돼서 수정필요-->
+  <script>
+    // Hide Header on on scroll down
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('#navbar').outerHeight();
+
+    $(window).scroll(function (event) {
+      didScroll = true;
     });
 
+    setInterval(function () {
+      if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+      }
+    }, 250);
+
+    function hasScrolled() {
+      var st = $(this).scrollTop();
+
+      // Make sure they scroll more than delta
+      if (Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+      // If they scrolled down and are past the navbar, add class .nav-up.
+      // This is necessary so you never see what is "behind" the navbar.
+      if (st > lastScrollTop && st > navbarHeight) {
+        // Scroll Down
+        $('#navbar').removeClass('nav-down').addClass('nav-up');
+      } else {
+        // Scroll Up
+        if (st + $(window).height() < $(document).height()) {
+          $('#navbar').removeClass('nav-up').addClass('nav-down');
+        }
+      }
+
+      lastScrollTop = st;
+    }
   </script>
 
   <!--banner js-->
