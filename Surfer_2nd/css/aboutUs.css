@@ -1,0 +1,70 @@
+/* about Us*/
+
+.team-wrap {
+    max-width: var(--width-column-regular);
+    width: 60vw;
+    margin: 0;
+    margin-left: var(--margin-left);
+    padding: 60px 0 100px;
+    /* padding-top: 40vh */
+} 
+
+ul.team {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+li.team {
+    max-width: 10em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    /* line-height: 1.25; */
+}
+
+a.team {
+    padding: 0;
+}
+
+/* 글자디자인 보류 */
+a.team{
+    text-decoration: none;
+    color: #282828;
+    background-image: linear-gradient(#a6d5ed,#a6d5ed);
+    /* background-image: linear-gradient(#a973ff,#a973ff); */
+    background-size: 100% 0.1em;
+    background-position: 0 90%;
+    background-repeat: no-repeat;
+    transition: all var(--transition-fast) var(--transition-ease);
+    padding: 0 0.05em;
+}
+
+img.team {
+    margin-bottom: 0.25em;
+}
+
+a img{
+   border: none;
+}
+
+/* 프로필 이미지 커지는 모션 */
+.team img {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+
+    -webkit-transition:0.3s;
+    transition:0.3s;
+
+    /* transition: all 0.3s ease-in-out;   부드러운 모션을 위해 추가 */
+  }
+
+  /*내부 이미지 확대*/
+  .team img:hover { 
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+
+.team {
+      overflow: hidden; 
+    } 
