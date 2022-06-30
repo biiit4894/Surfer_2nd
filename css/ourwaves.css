@@ -1,25 +1,11 @@
-html {
-    font-family: Noto Sans KR,AppleSDGothicNeo,Arial,sans-serif;
-    font-size: 16px;
-    overflow-y: scroll;
 
-    font-family: poppins;
-    font-size: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
-body {
-    margin: 0;
-    word-break: keep-all;
-    display: block;
-    margin: 8px;
-}
 
 .team-wrap {
     width: 1000px;
     margin: 0 auto;
     padding: 60px 0 35px;
+    /* 스크롤 유도 아이콘과 겹치지 않도록 임시로 패딩 설정 */
+    padding-top: 40vh;
 }
 
 /* Our Waves */
@@ -37,7 +23,7 @@ h2.team-title {
 
 /* ※이미지 클릭 시 기사 전문으로 이동합니다. */
 .click{
-    margin-left: 40px;
+    margin-left: 5px;
     font-size: 11px;
     margin-top: -40px;
 }

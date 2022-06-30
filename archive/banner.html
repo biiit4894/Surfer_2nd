@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/banner.css" rel="stylesheet">
+</head>
+<body>
+    <div id="banner" style="font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+      font-weight: 200;">
+
+        <span id="surfer">Surfer</span>는 <span id="highlight" class="surfer_line1" style="opacity: 0;">파도치는 데이터
+          속에서 새로운 물결을 발견하는 사람들</span>의 모임입니다.<br>
+        <span class="surfer_line2" style="opacity: 0;">지난 3월, 대선을 앞두고 <span id="chungwon"><a id="chungwon"
+              href="https://projectsurfer.netlify.app/">5년간의 국민청원 데이터</a></span>를 되돌아봤습니다.</span><br>
+        <span class="surfer_line3" style="opacity: 0;">그리고 6월, <span id="sanitary_worker"><a id="sanitary_worker"
+              href="https://projectsurfer.netlify.app/">환경미화원 처우</a></span>를 데이터를 통해
+          조망하였습니다.</span><br>
+        <span class="surfer_line4" style="opacity: 0;">데이터에 입각하여 주목받지 못한 이야기를 찾고, 누구나 즐길 수 있는 기사를 작성합니다.</span>
+        <!-- <div id="scrolldowndiv"><a href="#archive" id="scrolldown">Surfer의 기사 구경하기</a></div> -->
+      
+      </div>
+      <div class="scroll_icon_wrap" style="opacity: 0">
+        <a class="scroll_icon" href="#team-title-ourwaves">
+          <span></span>
+          <span></span>
+          <span></span>
+          <!-- Scroll -->
+        </a>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        // $(document).ready(function(){
+        //     $("a").on('click', function(event) {
+        //         if (this.hash !== "") {
+        //             event.preventDefault();
+        //             var hash = this.hash;
+        //             $('html, body').animate({
+        //                 scrollTop: $(hash).offset().top
+        //             }, 200, function(){
+        //                 window.location.hash = hash;
+        //             });
+        //         }
+        //     });
+        // });
+
+        $(document).ready(function () {
+            var jbTime = 1800;
+            $('.surfer_line1').animate({
+                opacity: '1'
+            }, jbTime, function () {
+                $('.surfer_line2').animate({
+                    opacity: '1'
+                }, jbTime, function () {
+                    $('.surfer_line3').animate({
+                        opacity: '1'
+                    }, jbTime);
+                });
+            });
+        });
+
+    </script>
+    <script src="js/banner.js"></script>
+</body>
+</html>

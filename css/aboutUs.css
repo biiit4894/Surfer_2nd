@@ -4,7 +4,9 @@
     max-width: var(--width-column-regular);
     width: 60vw;
     margin: 0;
-     margin-left: var(--margin-left);
+    margin-left: var(--margin-left);
+    padding: 60px 0 100px;
+    /* padding-top: 40vh */
 } 
 
 ul.team {
