@@ -15,11 +15,11 @@
     font-size: 64px;
     font-weight: 800;
     color: #333333;
-    background: linear-gradient(to top, transparent 3%, #a0e1ff 10%, #a0e1ff 30%, transparent 40%);
+    background: linear-gradient(to top, transparent 3%, #a6d5ed 10%, #a6d5ed 30%, transparent 40%);
 }
 
 #highlight {
-    text-decoration: 3px #83d8ff wavy underline;
+    text-decoration: 3px #a6d5ed wavy underline;
 }
 
 #chungwon,

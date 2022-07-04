@@ -1,7 +1,7 @@
 /* 최상단 navbar */
 
-.navbar {
-    height: 50px;
+#navbar {
+    height: 4vh;
     z-index: 999;
     position: fixed;
     top: 0;
@@ -20,8 +20,6 @@
 .nav-up {
     top: -48px; 
 }
-
-
 
 .left_item {
     float: left;

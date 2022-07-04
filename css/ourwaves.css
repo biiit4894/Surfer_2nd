@@ -23,7 +23,7 @@ h2.team-title {
 
 /* ※이미지 클릭 시 기사 전문으로 이동합니다. */
 .click{
-    margin-left: 40px;
+    margin-left: 5px;
     font-size: 11px;
     margin-top: -40px;
 }
