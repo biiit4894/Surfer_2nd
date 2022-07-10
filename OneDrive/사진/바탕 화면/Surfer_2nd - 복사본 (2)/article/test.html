@@ -1,0 +1,434 @@
+`<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>두번째기획 제목 | SURFER</title>
+    <!--article용, footer용 css 다시 만들었음-->
+    <link rel="stylesheet" href="../css/article/test_navbar.css">
+    <link rel="stylesheet" href="../css/article/test_banner.css">
+    <link rel="stylesheet" href="../css/article/test_intro.css">
+    <link rel="stylesheet" href="../css/article/test_part1.css">
+    <link rel="stylesheet" href="../css/article/test_part2.css">
+    <link rel="stylesheet" href="../css/article/test_part3.css">
+    <link rel="stylesheet" href="../css/article/test_footer.css">
+    <link rel="stylesheet" href="../css/article/test.css">
+    <!--part 2 도입부 내러티브 aos 애니메이션-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+        <div class="item" id="left_item">
+            <a class="linked_icon" href="">
+                <img id="surfer_icon" href="" src="../img/sea-waves.png">
+            </a>
+        </div>
+        <div class="item" id="center_items">
+            <a class="linked_icon" href="https://github.com/biiit4894/Surfer_2nd">
+                <img id="github_icon" src="../img/github.png">
+            </a>
+            <a class="linked_icon" href="">
+                <img id="notion_icon" href="" src="../img/notion.png">
+            </a>
+        </div>
+    </div>
+    
+    <!--모바일 햄버거 버튼 -->
+    <div class="mobile_hamburger_container">
+        <button class="mobile_hamburger_button">&#9776;</button>
+    </div>
+
+    <div class="mobile_menu_container">
+        <div class="mobile_menu" onclick="animateScrollTo('#intro',500)">편집자주</div>
+        <div class="mobile_menu" onclick="animateScrollTo('#part1',500)">Part 1</div>
+        <div class="mobile_menu" onclick="animateScrollTo('#part2',500)">Part 2</div>
+        <div class="mobile_menu" onclick="animateScrollTo('#part3',500)">Part 3</div>
+        <div class="mobile_menu" onclick="animateScrollTo('#outro',500)">Part 4</div>
+    </div>
+
+    <div id="toc_wrapper">
+        <div><a id="intro_toc" href="">편집자주</a></div><br>
+        <div><a id="part1_toc" href="">Part 1</a></div>
+        <div><a href="">1-1</a></div>
+        <div><a href="">1-2</a></div><br>
+        <div><a id="part2_toc" href="">Part 2</a></div>
+        <div><a href="">2-1</a></div>
+        <div><a href="">2-2</a></div><br>
+        <div><a id="part3_toc" href="">Part 3</a></div>
+        <div><a href="">3-1</a></div>
+        <div><a href="">3-2</a></div>
+        <div><a href="">3-3</a></div><br>
+        <div><a id="part4_toc" href="">Part 4</a></div>
+    </div>
+
+    <!-- SNS 공유 버튼 -->
+    <div id="share_btn_wrap">
+        <a id="btnKakao" class="link-icon kakao" href="javascript:shareKakao();">공유하기</a>
+    </div>
+
+    <!-- 랜딩페이지 -->
+    <section>
+        <h2 id="banner_title">
+            환경 미화원<small>의</small><br>
+            어깨<small>에</small><br>
+            만보기<small>가 달린 이유</small>
+            <!-- <br>
+            <span id="banner_title2">: 매일 50kg을 치우는 사람들</span> -->
+        </h2>
+        <!-- <div class="set set2">
+            <div><img src="../img/garbage1.png"></div>
+            <div><img src="../img/garbage1.png"></div>
+            <div><img src="../img/garbage1.png"></div>
+        </div>
+        <div class="set set3">
+            <div><img src="../img/garbage2_green.png"></div>
+            <div><img src="../img/garbage2_green.png"></div>
+            <div><img src="../img/garbage2_green.png"></div>
+        </div> -->
+    </section>
+
+    <!--편집자주-->
+    <div id="intro">
+        <div class="text_content" id="intro_prgph1">
+            <div id="article_title" class="intro_article_title">편집자주</div>
+            세계보건기구(WHO)와 국제노동기구(ILO)의 공동 조사에 따르면, 전세계적으로 매년 200만 명이 산업재해로 사망한다고 합니다.
+            우리나라에서는 작년 한해에만 2,062명이 안타까운 죽음을 맞이했습니다.
+            우리나라에서만 근로자 200명 당 1명 꼴로 산업재해가, 그리고 1만 명 당 1명 꼴로 사망 사고가 발생하는 겁니다.
+            <br><br>
+            그래서 이런 사고를 줄이기 위해 지난 6월 10일, 제110차 국제노동총회에서 ILO는 ‘노동기본권’에 ‘안전하고 건강한 근로환경'을 추가했습니다.
+            (1998년 &lt;노동 기본원칙과 권리선언&gt;에서 나온 ‘노동기본권’은 🔼결사의 자유 및 단체교섭의 효과적 인정 🔼모든 형태의 강제노동 철폐 🔼아동노동의 효과적 철폐 🔼고용과 직업상의 차별 철폐
+            등 4가지 분야로 이루어져 있습니다. )
+            <br><br>
+            뿐만 아니라, ILO는 산업안전 보건 분야 협약 중 제155호(산업안전보건과 작업환경)와 제187호(산업안전보건 증진체계)를 기본 협약으로 선정함으로써
+            모든 회원국이 존중·증진·실현해야 할 가장 기본적 협약으로 삼도록 했습니다.
+            <br><br>
+            회원국은 협약의 동의 여부를 자율적으로 결정할 수 있는데, 만약 동의하기로 결정한다면 이를 이행해야 하는 국제법적 구속력이 발생합니다.
+            한편, 우리나라는 2008년부터 위 두 협약에 동의해 따르고 있습니다.
+            <br><br>
+            이처럼 국제적으로 안전한 노동환경의 중요성은 커지고 있지만, 아이러니하게도 우리나라의 산업재해 현황은 매년 증가하는 추세입니다.
+            특히 환경미화원의 산업재해는 더욱이 심각했습니다.
+            ‘SURFER’가 정보공개청구를 진행한 결과, 전체 산업재해 현황에서 환경미화원이 차지하는 비율은 2016년 약 4.8%에서 2019년 약 5.9%로 늘어났고, 이 중 사망하는 환경미화원은 비율은 2016년
+            약 5%에서 2019년 약 7.1%까지 가파르게 증가했습니다.
+            <br><br>
+            매년 산업재해로 인한 사망자 수는 약 2000명으로 비교적 일정한데 비해 환경미화원의 사망자 수는 계속해서 증가하고 있었습니다.
+            왜 환경미화원에게 이런 일이 발생하고 있는걸까요?
+            혹시 환경미화원의 노동 환경에 여전히 큰 위험이 존재하고 있는 것은 아닐까요.
+            <br><br>
+            **환경미화원은 크게 가로청소 인력과 수집·운반 인력으로 나뉩니다. 그리고 ‘SURFER’는 환경미화원의 노동 환경 문제를 심층적으로 살펴보기 위해 이들 중 상대적으로 더 무리한 노동을 하는 수집·운반 인력을
+            중심으로 데이터를 수집·분석하였습니다.
+        </div>
+    </div>
+
+    <!-- Part 1. 쓰레기가 쌓일수록 산재가 쌓였다 -->
+    <div id="part1">
+        <div id="article_title" class="article_title_serif">Part 1.</div>
+        <div id="article_title">쓰레기가 쌓일수록 산재가 쌓였다</div>
+    
+        <div class="article_title_small" id="article_title_small_serif">1</div>
+        <div class="article_title_small">환경미화원 사망사건 리포트</div>
+
+        <div class="part1_prgph_wrap" id="part1_prgph_wrap1">
+            <div class="part1_prgph" id="part1_prgph1">
+    
+                <span class="part1_prgph1_cat" id="part1_prgph1_cat1">적재함 협착</span><br>
+    
+                <div class="part1_txtbox" id="part1_txtbox1">
+                    <strong>2017년 11월 29일.</strong><br>
+                    광주광역시에서 23년간 환경미화원으로 근무한 <strong>노연수</strong> 씨(가명)가 적재함에 끼어 숨졌다.<br>
+                    <strong>노연수</strong> 씨는 위생매립장에서 적재함과 열린 덮개 사이에서 잔여 쓰레기를 치우고 있었다.<br>
+                    쓰레기를 처리하다 갑자기 수거 차량의 덮개가 닫혔고 그의 머리가 끼었다.
+                </div>
+    
+                <div class="part1_txtbox" id="part1_txtbox4">
+                    머리를 크게 다쳐 곧바로 병원으로 옮겨졌지만 그는 깨어나지 못했다.<br>
+                    사고 업체 관계자는 적재함과 덮개 사이에는 들어가지 못하게 막고 있다고 전했다.<br>
+                    기계가 오작동할 수 있기 때문이다.<br>
+                    그럼에도 불구하고 청소차량 안전 부주의로 인한 환경미화원의 안전 사고는 잇따르고 있다.
+                </div>
+            </div>
+        </div>
+
+        <div class="part1_prgph_wrap" id="part1_prgph_wrap2">
+            <div class="part1_prgph">
+                <span class="part1_prgph1_cat" id="part1_prgph1_cat2">업무상 질병</span><br>
+    
+                <div class="part1_txtbox">
+                    <strong>2018년 11월 13일.</strong><br>
+                    <strong>이정현 씨</strong>(가명)가 폐암으로 숨을 거뒀다.<br>
+                    지난하고 길었던 10개월간의 산재 승인 심사가 통과된 다음 날이었다.<br>
+                    <strong>이정현</strong> 씨는 순천에서 21년간 환경미화원으로 일했다.<br>
+                    슬레이트나 분진, 연탄 등을 옮기기도 했고 미세먼지가 심한 날에도 어김없이 출근했다.
+                </div>
+                <div class="part1_txtbox" id="part1_txtbox4">
+                    청소차에 매달려 배기관 매연과 씨름하기를 20년. <br>
+                    매일같이 들이키는 자동차 매연은 조금씩 황씨의 건강을 좀먹었고,
+                    퇴직하고서야 폐암을 발견할 수 있었다.<br>
+                    수술도 불가능한 4기였다.<br>
+                    회사에서 제공하는 건강 검진이 있었지만,
+                    기본적인 수준에 그쳐 미리 폐암을 잡아낼 수 없었다.
+                </div>
+            </div>
+        </div>
+
+        <div class="part1_prgph_wrap" id="part1_prgph_wrap3">
+            <div class="part1_prgph">
+                <span class="part1_prgph1_cat" id="part1_prgph1_cat3">골절/떨어짐/교통사고</span><br>
+    
+                <div class="part1_txtbox">
+                    <strong>2020년 11월 6일.</strong><br>
+                    대구광역시 환경미화원 <strong>박정태</strong> 씨(가명)가 교통사고로 목숨을 잃었다.<br>
+                    <strong>박정태</strong> 씨는 음식물 쓰레기 수거원으로 일했다. <br>
+                    그는 그날도 여느 때와 다름없이 동료와 함께 다음 수거 장소로 이동하기 위해<br> 청소차 뒷편에 매달려 신호를 기다리고 있었다.
+                </div>
+    
+                <div class="part1_txtbox">
+                    그러던 중 음주운전자가 자신의 승용차로 음식물 쓰레기 수거 차량을 뒤에서 들이박았다.<br>
+                    당시 수거 차량 뒤쪽 발판에 서있던 <strong>박정태</strong> 씨는 충돌을 피하지 못하고 크게 다쳐 병원에 이송됐지만 결국 숨졌다.<br><br>
+                    청소차 뒷발판은 환경미화원을 사지에 내몬다.<br>
+                    그러나 업무 시간 안에 담당 구역의 쓰레기를 모두 빠르게 수거하기 위해서는 작은 뒷발판에 매달릴 수 밖에 없다.<br>
+                    결국 그도 청소차 뒷발판의 위험성을 피하지 못했다.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Part 2. 기인물별 산재 원인 1위, 수거차량-->
+    <div id="part2">
+        <div id="article_title" class="article_title_serif">Part 2.</div>
+        <div id="article_title">기인물별 산재 원인 1위, 수거차량 </div>
+    </div>
+
+    <!-- Part 3. 송파구 환경미화원 1인당 작업량 3.5t-->
+    <div id="part3">
+        <div id="article_title" class="article_title_serif">Part 3.</div>
+        <div id="article_title">송파구 환경미화원 1인당 작업량 3.5t</div>
+
+        <div id="part3_work_per1">
+            <div id="part3_work_per1_title">2020년 자치구별 작업량 현황</div>
+
+            <div class="part3_container">
+                <div id="part3_work_per1_sign">※목록에서 자치구 이름을 클릭해 2020년 환경미화원 작업량을 알아보세요.</div>
+
+                <div class="category_container" style="margin-top: 20px;">
+                    <div class="category" onclick="toggleImg()">A구</div>
+                    <div class="category" onclick="toggleImg2()">B구</div>
+                    <div class="category" onclick="toggleImg3()">C구</div>
+                    <div class="category" onclick="toggleImg()">D구</div>
+                    <div class="category" onclick="toggleImg2()">E구</div>
+                    <div class="category" onclick="toggleImg3()">F구</div>
+                    <div class="category" onclick="toggleImg()">G구</div>
+                    <div class="category" onclick="toggleImg2()">H구</div>
+                    <div class="category" onclick="toggleImg3()">I구</div>
+                    <div class="category" onclick="toggleImg()">J구</div>
+                    <div class="category" onclick="toggleImg2()">K구</div>
+                    <div class="category" onclick="toggleImg3()">L구</div>
+                    <div class="category" onclick="toggleImg()">M구</div>
+                    <div class="category" onclick="toggleImg2()">N구</div>
+                    <div class="category" onclick="toggleImg3()">O구</div>
+                </div>
+
+                <div id="img_district_container">
+                    <!-- <select id="part3_district" name="part3_district" size="4" required autofocus>
+                        <option disabled selected>자치구 이름</option>
+                        <option onclick="toggleImg()" value="A구">A구</option>
+                        <option onclick="toggleImg2()" value="B구">B구</option>
+                        <option onclick="toggleImg3()" value="C구">C구</option>
+                        <option onclick="toggleImg()" value="D구">D구</option>
+                        <option onclick="toggleImg2()" value="E구">E구</option>
+                        <option onclick="toggleImg3()" value="F구">F구</option>
+                        <option onclick="toggleImg()" value="G구">G구</option>
+                        <option onclick="toggleImg2()" value="H구">H구</option>
+                        <option onclick="toggleImg3()" value="I구">I구</option>
+                        <option onclick="toggleImg()" value="J구">J구</option>
+                        <option onclick="toggleImg2()" value="K구">K구</option>
+                        <option onclick="toggleImg3()" value="L구">L구</option>
+                        <option onclick="toggleImg()" value="M구">M구</option>
+                        <option onclick="toggleImg2()" value="N구">N구</option>
+                        <option onclick="toggleImg3()" value="O구">O구</option>
+                    </select> -->
+                    <div id="part3_work_per1_imgcontainer">
+                        <img id="img" src="../img/map1.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div id="project_name">Surfer</div>
+        <div id="copyright">2022. Project Surfer. All rights reserved.</div>
+    </div>
+
+    <!--toc_wrapper js-->
+    <script>
+        $(document).ready(function () {
+            var tmp = parseInt($("#toc_wrapper").css('top'));
+
+            $(window).scroll(function () {
+                var scrollTop = $(window).scrollTop();
+                var obj_position = scrollTop + tmp + "px";
+
+                $("#toc_wrapper").stop().animate({
+                    "top": obj_position
+                }, 500);
+
+            }).scroll();
+        });
+    </script>
+
+    <!--모바일 햄버거 버튼 js-->
+    <script>
+        // 모바일 햄버거 메뉴바 
+        let num = 0; 
+        let hamburger_button = document.querySelector('.mobile_hamburger_button');
+        $(hamburger_button).click(() => {
+            if(num % 2 == 0) {
+                hamburger_button.innerHTML = 'Ⅹ';  
+                $('.mobile_menu_container').css('height', '25vh');
+                $('.mobile_menu').css('height', '5vh');
+                setTimeout(()=>{
+                    $('.mobile_menu').css('display', 'block'); 
+                }, 150); 
+            } else {
+                hamburger_button.innerHTML = '&#9776;'; 
+                $('.mobile_menu_container').css('height', '0vh');
+                $('.mobile_menu').css('height', '0vh');
+                setTimeout(()=>{
+                    $('.mobile_menu').css('display', 'none'); 
+                }, 200); 
+            }
+            num += 1; 
+        })
+
+        let mobile_menus = document.querySelectorAll('.mobile_menu');
+        mobile_menus.forEach((mobile_menu) => {
+            $(mobile_menu).click(() => {
+                hamburger_button.innerHTML = '&#9776;'; 
+                $('.mobile_menu_container').css('height', '0vh');
+                $('.mobile_menu').css('height', '0vh');
+                setTimeout(()=>{
+                    $('.mobile_menu').css('display', 'none'); 
+                }, 200); 
+                num += 1; 
+            })
+        })
+    </script>
+
+    <!--Part 2. 도입부 내러티브 aos 애니메이션-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: -100, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 3000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+
+    <!--Part 2. 청소차 부위별 문제점-->
+    <script>
+        // 청소차 이미지 클릭 시 좌표 출력
+        function action_coords(event) {
+            var x1 = event.clientX;
+            var y1 = event.clientY;
+            var x2 = event.offsetX;
+            var y2 = event.offsetY;
+            var x3 = event.screenX;
+            var y3 = event.screenY;
+            var coords = "clientX: " + x1 + ", clientY: " + y1 + "<br/>";
+            coords += "offsetX: " + x2 + ", offsetY: " + y2 + "<br/>";
+            coords += "screenX: " + x3 + ", screenY: " + y3;
+            console.log(coords);
+        }
+
+        var footholdModal = document.getElementById("footholdModal");
+        var foothold = document.getElementById("back_foothold");
+        var footholdSpan = document.getElementById("footholdSpan");
+
+        var ventpipeModal = document.getElementById("ventpipeModal");
+        var ventpipe = document.getElementById("vent_pipe");
+        var ventpipeSpan = document.getElementById("ventpipeSpan")
+
+
+        // 청소차 부위별 mouseenter시 동작
+        // function areaColor(event){
+        //     console.log(event.target);
+        //     event.target.style.border = "1px solid red";
+        // }
+
+        // function areaColorOut(event){
+        //     event.target.style.border = "none";
+        // }
+
+
+
+        foothold.onclick = function () {
+            footholdModal.style.display = "flex";
+        }
+        footholdSpan.onclick = function () {
+            footholdModal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == footholdModal) {
+                footholdModal.style.display = "none";
+            }
+        }
+
+        ventpipe.onclick = function () {
+            ventpipeModal.style.display = "flex";
+        }
+        ventpipeSpan.onclick = function () {
+            ventpipeModal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == ventpipeModal) {
+                ventpipeModal.style.display = "none";
+            }
+        }
+    </script>
+
+    <!--Part 3. 2020 자치구별 작업량 현황-->
+    <script>
+            function toggleImg() {
+                document.getElementById("img").src = "../img/map1.png";
+            }
+            function toggleImg2() {
+                document.getElementById("img").src = "../img/map2.png";
+            }
+            function toggleImg3() {
+                document.getElementById("img").src = "../img/map3.png";
+            }
+    </script>
+</body>
+
+</html>

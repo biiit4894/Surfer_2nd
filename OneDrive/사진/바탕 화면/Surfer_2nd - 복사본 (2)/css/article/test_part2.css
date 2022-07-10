@@ -1,0 +1,107 @@
+/* Part 2 */
+#part2 {
+    width: 100%;
+    padding-top: 300px;
+    background-color: black;
+    color: white;
+}
+
+/* 내러티브 도입 - 청소차 */
+#car_fromleft {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 550px;
+
+}
+
+#falling_worker {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    margin-top: -150px;
+    margin-left: 250px;
+}
+
+
+/* 내러티브 도입 - 인용구 */
+#part2_quote {
+    background: rgba(255, 255, 255, 0.6);
+    line-height: 140%;
+    color: #000000;
+    font-weight: 400;
+    padding: 18px;
+    font-size: 18px;
+    position: absolute;
+    right: 250px;
+}
+
+#part2_quote_mark {
+    font-size: 25px;
+}
+
+/* 산안 데이터 */
+#part2_data1 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 500px;
+}
+
+/* 작업과정 */
+#part2_problem {
+    margin-top: 400px;
+    text-align: center;
+}
+
+#part2_problem_car {
+    width: 800px;
+}
+
+/* 청소차 부위별 문제점 */
+
+/* 뒷발판 area */
+#back_foothold:hover {
+    border: 1px red solid;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* 부위 클릭 시 flex로 변함. */
+    position: fixed;
+    z-index: 999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0);
+    /*rgba 지원 안될 경우 */
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    text-align: left;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

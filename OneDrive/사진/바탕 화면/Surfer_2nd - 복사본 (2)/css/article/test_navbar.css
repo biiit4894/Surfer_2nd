@@ -1,0 +1,114 @@
+/* 최상단 navbar */
+#navbar {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 1vh;
+    background-color: #F6F6F6;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+#left_item {
+    float: left;
+    margin-left: 3.6vh;
+}
+
+#center_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#surfer_icon{
+    width: 4vh;
+    height: 4vh;
+}
+
+#github_icon {
+    width: 4vh;
+    height: 4vh;
+    margin-right: 1vw;
+}
+
+#notion_icon {
+    width: 4vh;
+    height: 4vh;
+}
+
+/* 모바일 햄버거 버튼 */
+.mobile_hamburger_container {
+    box-sizing: border-box;
+    display: none;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 5vh;
+    left: 0px;
+    z-index: 2;
+    text-align: center;
+}
+
+.mobile_hamburger_button {
+    border: none;
+    background-color: transparent;
+    font-weight: border;
+    font-size: 1.5rem;
+    height: 5vh;
+}
+
+.mobile_menu_container {
+    position: fixed;
+    width: 100%;
+    height: 0vh; /*full height: 30vh*/
+    top: 6vh;
+    left: 0px;
+    z-index: 2;
+    background-color: white;
+    transition: height ease-in-out 0.3s;
+}
+
+.mobile_menu {
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 0vh; /*full height: 6vh*/
+    text-align: center;
+    font-weight: border;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    padding-top: 11px;
+    transition: height ease-in-out 0.3s;
+}
+
+.mobile_menu:hover {
+    background-color: #e4e3e3;
+}
+
+
+/* 세로모드 모바일 디바이스 */
+@media (max-width: 575px) {
+    #navbar {
+        display: none;
+    }
+    .mobile_hamburger_container {
+        display: block;
+    }
+}
+
+/* 태블릿 디바이스 */
+@media (max-width: 991px) {
+    #navbar {
+        display: none;
+    }
+    .mobile_hamburger_container {
+        display: block;
+    }
+
+}
+
+/* 데스크탑 */
+@media (max-width: 1199px) {
+    
+}

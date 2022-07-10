@@ -1,0 +1,241 @@
+
+
+.team-wrap {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0 35px;
+    /* 스크롤 유도 아이콘과 겹치지 않도록 임시로 패딩 설정 */
+    padding-top: 40vh;
+}
+
+/* Our Waves */
+h2.team-title {
+    margin-left: 40px;
+    margin-bottom: 60px;
+    font-family: Poppins;
+    font-size: 40px;
+    line-height: 1.11;
+    letter-spacing: -1.78px;
+    text-align: left;
+    text-rendering: auto;
+    font-weight: bold;
+}
+
+/* ※이미지 클릭 시 기사 전문으로 이동합니다. */
+.click{
+    margin-left: 5px;
+    font-size: 11px;
+    margin-top: -40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.team-swiper {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -85px;  /* bigtitle과 사진 사이 간격; 화살표랑 같이 움직임*/
+}
+.team-swiper .swiper-container {
+    width: 896px;
+}
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.team-swiper .swiper-slide {
+    position: relative;
+    width: 272px!important;
+
+    padding-top: 185px; /* bigtitle과 사진 사이 간격 */
+    
+    filter: grayscale(1);
+    opacity: .5;
+    cursor: pointer;
+    transition: filter .8s,opacity .8s,transform .8s;
+    
+}
+.team-swiper .swiper-slide-active {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+
+.team-swiper .user-thumbs {
+    width: 250px;
+    height: 250px;
+    margin: -10px auto 14px;
+}
+img {
+    max-width: 100%;
+    height: 163.72px;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: top;
+}
+.team-swiper .pub_num, .team-swiper .pub_title, .team-swiper .pub_date {
+    display: block;
+    letter-spacing: -.18px;
+    text-align: center;
+}
+.team-swiper .pub_date {
+    margin-bottom: 6px;
+    font-size: 16px;
+    color: #9b9b9b;
+}
+.team-swiper .pub_num {
+    font-size: 14px;
+    color: #000;
+}
+.team-swiper .pub_title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+.swiper-container {overflow: visible;}
+
+/* 화살표 버튼 */
+.team-swiper .swiper-button-prev {
+    left: -50px;
+}
+.team-swiper .swiper-button-next, .team-swiper .swiper-button-prev {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 60px;
+    width: 60px;
+    margin-top: 60px;
+    cursor: pointer;
+    z-index: 1;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: 10px;
+    right: auto;
+}
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: calc(var(--swiper-navigation-size)/44*27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(-1*var(--swiper-navigation-size)/2);
+    z-index: 10;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+      
+.team-swiper .swiper-button-prev:after {
+    background-image: url(https://career-cdn.woowahan.com/resources/static/img/icon-arrow-left.72892efa.svg);
+}
+
+.team-swiper .swiper-button-next:after, .team-swiper .swiper-button-prev:after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 8px);
+    width: 32px;
+    height: 17px;
+}
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+    content: "prev";
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none!important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: normal;
+    line-height: 1;
+}
+.team-swiper .swiper-button-next {
+    right: -50px;
+}
+.team-swiper .swiper-button-next, .team-swiper .swiper-button-prev {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 60px;
+    width: 60px;
+    margin-top: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: 10px;
+    left: auto;
+}
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: calc(var(--swiper-navigation-size)/44*27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(-1*var(--swiper-navigation-size)/2);
+    z-index: 10;
+    cursor: pointer;
+   
+    display: -ms-flexbox;
+    display: flex;
+    
+    -ms-flex-align: center;
+    align-items: center;
+    
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+.team-swiper .swiper-button-next {
+    right: 50px;
+}
+.team-swiper .swiper-button-next:after {
+    background-image: url(https://career-cdn.woowahan.com/resources/static/img/icon-arrow-right-2.4865a14f.svg);
+}
+
+.team-swiper .swiper-button-next:after, .team-swiper .swiper-button-prev:after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 8px);
+    width: 32px;
+    height: 17px;
+}

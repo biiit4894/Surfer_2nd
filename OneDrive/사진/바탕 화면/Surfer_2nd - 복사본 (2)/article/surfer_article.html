@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>두번째기획 제목 | SURFER</title>
+    <!--article용, footer용 css 다시 만들었음-->
+    <link rel="stylesheet" href="../css/article/navbar.css">
+    <link rel="stylesheet" href="../css/article/footer.css">
+    <link rel="stylesheet" href="../css/article/surfer_article.css">
+    <!--part 2 도입부 내러티브 aos 애니메이션-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+        <div class="left_item">
+            <a class="linked_icon" href=""><img id="surfer_icon" href="" src="../img/sea-waves.png"></a>
+        </div>
+        <div class="center_items">
+            <a class="linked_icon" href="https://github.com/biiit4894/Surfer_2nd"><img id="github_icon"
+                    src="../img/github.png"></a>
+            <a class="linked_icon" href=""><img id="notion_icon" href="" src="../img/notion.png"></a>
+        </div>
+    </div>
+
+    <div class="mobile_hamburger_container">
+        <button class="mobile_hamburger_button">&#9776;</button>
+    </div>
+
+    <div class="mobile_menu_container">
+        <div class="mobile_menu" onclick="animateScrollTo('#intro',500)">편집자주</div>
+        <div class="mobile_menu" onclick="animateScrollTo('#part1',500)">Part 1</div>
+        <div class="mobile_menu" onclick="animateScrollTo('#part2',500)">Part 2</div>
+        <div class="mobile_menu" onclick="animateScrollTo('#part3',500)">Part 3</div>
+        <div class="mobile_menu" onclick="animateScrollTo('#outro',500)">Part 4</div>
+    </div>
+
+    <div id="toc_wrapper">
+        <div><a id="intro_toc" href="">편집자주</a></div><br>
+        <div><a id="part1_toc" href="">Part 1</a></div>
+        <div><a href="">1-1</a></div>
+        <div><a href="">1-2</a></div><br>
+        <div><a id="part2_toc" href="">Part 2</a></div>
+        <div><a href="">2-1</a></div>
+        <div><a href="">2-2</a></div><br>
+        <div><a id="part3_toc" href="">Part 3</a></div>
+        <div><a href="">3-1</a></div>
+        <div><a href="">3-2</a></div>
+        <div><a href="">3-3</a></div><br>
+        <div><a id="part4_toc" href="">Part 4</a></div>
+    </div>
+
+    <!-- SNS 공유 버튼 -->
+    <div id="share_btn_wrap">
+        <a id="btnKakao" class="link-icon kakao" href="javascript:shareKakao();">공유하기</a>
+    </div>
+    
+    <!-- 랜딩페이지 -->
+    <section>
+        <h2 id="banner_title">
+            환경 미화원<small>의</small><br>
+            어깨<small>에</small><br>
+            만보기<small>가 달린 이유</small>
+            <!-- <br>
+            <span id="banner_title2">: 매일 50kg을 치우는 사람들</span> -->
+        </h2>
+        <!-- <div class="set set2">
+            <div><img src="../img/garbage1.png"></div>
+            <div><img src="../img/garbage1.png"></div>
+            <div><img src="../img/garbage1.png"></div>
+        </div>
+        <div class="set set3">
+            <div><img src="../img/garbage2_green.png"></div>
+            <div><img src="../img/garbage2_green.png"></div>
+            <div><img src="../img/garbage2_green.png"></div>
+        </div> -->
+    </section>
+
+    <!-- 편집자주 -->
+    <div id="intro">
+        
+        <div id="intro_prgph1">
+            <div id="article_title" class="intro_article_title">편집자주</div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;세계보건기구(WHO)와 국제노동기구(ILO)의 공동 조사에 따르면, 전세계적으로 매년 200만 명이 산업재해로 사망한다고 합니다. 
+            우리나라에서는 작년 한해에만 2,062명이 안타까운 죽음을 맞이했습니다. 
+            우리나라에서만 근로자 200명 당 1명 꼴로 산업재해가, 그리고 1만 명 당 1명 꼴로 사망 사고가 발생하는 겁니다.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;그래서 이런 사고를 줄이기 위해 지난 6월 10일, 제110차 국제노동총회에서 ILO는 ‘노동기본권’에 ‘안전하고 건강한 근로환경'을 추가했습니다. 
+            (1998년 &lt;노동 기본원칙과 권리선언&gt;에서 나온 ‘노동기본권’은 🔼결사의 자유 및 단체교섭의 효과적 인정 🔼모든 형태의 강제노동 철폐 🔼아동노동의 효과적 철폐 🔼고용과 직업상의 차별 철폐 등 4가지 분야로 이루어져 있습니다. )
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;뿐만 아니라, ILO는 산업안전 보건 분야 협약 중 제155호(산업안전보건과 작업환경)와 제187호(산업안전보건 증진체계)를 기본 협약으로 선정함으로써 모든 회원국이 존중·증진·실현해야 할 가장 기본적 협약으로 삼도록 했습니다.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회원국은 협약의 동의 여부를 자율적으로 결정할 수 있는데, 만약 동의하기로 결정한다면 이를 이행해야 하는 국제법적 구속력이 발생합니다. 
+            한편, 우리나라는 2008년부터 위 두 협약에 동의해 따르고 있습니다.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이처럼 국제적으로 안전한 노동환경의 중요성은 커지고 있지만, 아이러니하게도 우리나라의 산업재해 현황은 매년 증가하는 추세입니다. 
+            특히 환경미화원의 산업재해는 더욱이 심각했습니다. 
+            ‘SURFER’가 정보공개청구를 진행한 결과, 전체 산업재해 현황에서 환경미화원이 차지하는 비율은 2016년 약 4.8%에서 2019년 약 5.9%로 늘어났고, 이 중 사망하는 환경미화원은 비율은 2016년 약 5%에서 2019년 약 7.1%까지 가파르게 증가했습니다. 
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;매년 산업재해로 인한 사망자 수는 약 2000명으로 비교적 일정한데 비해 환경미화원의 사망자 수는 계속해서 증가하고 있었습니다. 
+            왜 환경미화원에게 이런 일이 발생하고 있는걸까요? 
+            혹시 환경미화원의 노동 환경에 여전히 큰 위험이 존재하고 있는 것은 아닐까요.
+            <br><br>
+            **환경미화원은 크게 가로청소 인력과 수집·운반 인력으로 나뉩니다. 그리고 ‘SURFER’는 환경미화원의 노동 환경 문제를 심층적으로 살펴보기 위해 이들 중 상대적으로 더 무리한 노동을 하는 수집·운반 인력을 중심으로 데이터를 수집·분석하였습니다. 
+        </div>
+    </div>
+
+    <!-- Part 1. 쓰레기가 쌓일수록 산재가 쌓였다 -->
+    <div id="part1">
+        <div id="article_title" class="article_title_serif">Part 1.</div>
+        <div id="article_title">쓰레기가 쌓일수록 산재가 쌓였다</div>
+
+        <div class="article_title_small" id="article_title_small_serif">1</div>
+        <div class="article_title_small">환경미화원 사망사건 리포트</div>
+
+        <div class="part1_prgph_wrap" id="part1_prgph_wrap1">
+
+            <!--투명도 준 텍스트 상자는 width를 720으로 늘림-->
+            <div class="part1_prgph" id="part1_prgph1" style="width: 720px;">
+
+                <span class="part1_prgph1_cat" id="part1_prgph1_cat1">적재함 협착</span><br>
+
+                <div class="part1_txtbox" id="part1_txtbox1">
+                    <strong>2017년 11월 29일.</strong><br>
+                    광주광역시에서 23년간 환경미화원으로 근무한 <strong>노연수</strong> 씨(가명)가 적재함에 끼어 숨졌다.<br>
+                    <strong>노연수</strong> 씨는 위생매립장에서 적재함과 열린 덮개 사이에서 잔여 쓰레기를 치우고 있었다.<br>
+                    쓰레기를 처리하다 갑자기 수거 차량의 덮개가 닫혔고 그의 머리가 끼었다.
+                </div>
+
+                <div class="part1_txtbox" id="part1_txtbox4">
+                    머리를 크게 다쳐 곧바로 병원으로 옮겨졌지만 그는 깨어나지 못했다.<br>
+                    사고 업체 관계자는 적재함과 덮개 사이에는 들어가지 못하게 막고 있다고 전했다.<br>
+                    기계가 오작동할 수 있기 때문이다.<br>
+                    그럼에도 불구하고 청소차량 안전 부주의로 인한 환경미화원의 안전 사고는 잇따르고 있다.
+                </div>
+
+            </div>
+        </div>
+
+        <div class="part1_prgph_wrap" id="part1_prgph_wrap2">
+            <!--투명도 준 텍스트 상자는 width를 700으로 늘림-->
+            <div class="part1_prgph" style="width: 740px;">
+                <span class="part1_prgph1_cat" id="part1_prgph1_cat2">업무상 질병</span><br>
+
+                <div class="part1_txtbox">
+                    <strong>2018년 11월 13일.</strong><br>
+                    <strong>이정현 씨</strong>(가명)가 폐암으로 숨을 거뒀다.<br>
+                    지난하고 길었던 10개월간의 산재 승인 심사가 통과된 다음 날이었다.<br>
+                    <strong>이정현</strong> 씨는 순천에서 21년간 환경미화원으로 일했다.<br>
+                    슬레이트나 분진, 연탄 등을 옮기기도 했고 미세먼지가 심한 날에도 어김없이 출근했다.
+                </div>
+                <div class="part1_txtbox" id="part1_txtbox4">
+                    청소차에 매달려 배기관 매연과 씨름하기를 20년. <br>
+                    매일같이 들이키는 자동차 매연은 조금씩 황씨의 건강을 좀먹었고,
+                    퇴직하고서야 폐암을 발견할 수 있었다.
+                    수술도 불가능한 4기였다.<br>
+                    회사에서 제공하는 건강 검진이 있었지만,
+                    기본적인 수준에 그쳐 미리 폐암을 잡아낼 수 없었다.
+                </div>
+            </div>
+        </div>
+
+        <div class="part1_prgph_wrap" id="part1_prgph_wrap3">
+
+            <!--투명도 준 텍스트 상자는 width를 700으로 늘림-->
+            <div class="part1_prgph" style="width: 720px;">
+                <span class="part1_prgph1_cat" id="part1_prgph1_cat3">골절/떨어짐/교통사고</span><br>
+
+                <div class="part1_txtbox">
+                    <strong>2020년 11월 6일.</strong><br>
+                    대구광역시 환경미화원 <strong>박정태</strong> 씨(가명)가 교통사고로 목숨을 잃었다.<br>
+                    <strong>박정태</strong> 씨는 음식물 쓰레기 수거원으로 일했다. <br>
+                    그는 그날도 여느 때와 다름없이 동료와 함께 다음 수거 장소로 이동하기 위해 청소차 뒷편에 매달려 신호를 기다리고 있었다.
+                </div>
+
+                <div class="part1_txtbox">
+                    그러던 중 음주운전자가 자신의 승용차로 음식물 쓰레기 수거 차량을 뒤에서 들이박았다.<br>
+                    당시 수거 차량 뒤쪽 발판에 서있던 <strong>박정태</strong> 씨는 충돌을 피하지 못하고 크게 다쳐 병원에 이송됐지만 결국 숨졌다.<br><br>
+                    청소차 뒷발판은 환경미화원을 사지에 내몬다.
+                    그러나 업무 시간 안에 담당 구역의 쓰레기를 모두 빠르게 수거하기 위해서는 작은 뒷발판에 매달릴 수 밖에 없다.
+                    결국 그도 청소차 뒷발판의 위험성을 피하지 못했다.
+                </div>
+            </div>
+        </div>
+
+        <div class="article_title_small" id="article_title_small_serif">2</div>
+        <div class="article_title_small">5년간 환경미화원 산재사고 현황</div>
+
+        <div class="part1_prgph" id="part1_prgph2" style="width: 600px;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;모든 국민은 그 보호하는 자녀에게 적어도 초등교육과 법률이 정하는 교육을 받게 할 의무를 진다. 대통령은 국무총리·국무위원·행정각부의 장
+            기타 법률이 정하는 공사의 직을 겸할 수 없다. 공무원은 국민전체에 대한 봉사자이며, 국민에 대하여 책임을 진다. 대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 제안된 헌법개정안은
+            대통령이 20일 이상의 기간 이를 공고하여야 한다. 공공필요에 의한 재산권의 수용·사용 또는 제한 및 그에 대한 보상은 법률로써 하되, 정당한 보상을 지급하여야 한다. 모든 국민은 양심의 자유를
+            가진다. 대한민국은 민주공화국이다. 이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.<br><br>
+                    <!--환경미화원의 산업재해현황 : 근로복지공단 정보공개청구 -->
+        <div class='tableauPlaceholder' id='viz1656568930521' style='margin: 0 auto;'><noscript><a href='#'><img
+            alt='환경미화원의 산업재해 현황 '
+            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pa&#47;Part1-1_Mobile_ver&#47;_2&#47;1_rss.png'
+            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+    <param name='embed_code_version' value='3' />
+    <param name='site_root' value='' />
+    <param name='name' value='Part1-1_Mobile_ver&#47;_2' />
+    <param name='tabs' value='no' />
+    <param name='toolbar' value='yes' />
+    <param name='static_image'
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pa&#47;Part1-1_Mobile_ver&#47;_2&#47;1.png' />
+    <param name='animate_transition' value='yes' />
+    <param name='display_static_image' value='yes' />
+    <param name='display_spinner' value='yes' />
+    <param name='display_overlay' value='yes' />
+    <param name='display_count' value='yes' />
+    <param name='language' value='ko-KR' />
+    <param name='filter' value='publish=yes' />
+</object></div>
+<script
+type='text/javascript'> 
+var divElement = document.getElementById('viz1656568930521'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '320px'; vizElement.style.height = '477px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+        </div>
+
+        <div class="part1_prgph" id="part1_prgph3" style="width: 600px;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;국가는 대외무역을 육성하며, 이를 규제·조정할 수 있다. 국가는 사회보장·사회복지의 증진에 노력할 의무를 진다. 헌법재판소의 조직과 운영
+            기타 필요한 사항은 법률로 정한다. 이 헌법시행 당시의
+            대법원장과 대법원판사가 아닌 법관은 제1항 단서의 규정에 불구하고 이 헌법에 의하여 임명된 것으로 본다.
+            모든 국민은 인간다운 생활을 할 권리를 가진다. 광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을
+            특허할 수 있다. 국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는 국무위원 또는 정부위원으로
+            하여금 출석·답변하게 할 수 있다.
+        </div>
+    </div>
+
+    <!-- Part 2. 기인물별 산재 원인 1위, 수거차량-->
+    <div id="part2">
+        <div id="article_title" class="article_title_serif">Part 2.</div>
+        <div id="article_title">기인물별 산재 원인 1위, 수거차량 </div>
+
+        <!--왼쪽에서 오른쪽으로 이동하는 청소차, 위로 올라오는 인용구, 대각선으로 떨어지는 미화-->
+        <div data-aos="fade-right">
+            <img id="car_fromleft" src="../img/car.png">
+        </div>
+
+        <div id="part2_quote">
+            <span id="part2_quote_mark">"</span>&nbsp;저도 발판에 매달리다가 발이 미끌어진 적 있죠.<br>
+            &nbsp;&nbsp;&nbsp;쓰레기 수거하다 교통사고 당하는 동료를 본 적도 있고요&nbsp;<span id="part2_quote_mark">"</span>
+        </div>
+        <div data-aos="fade-down-left">
+            <img id="falling_worker" src="../img/falling_worker.png">
+        </div>
+
+        <!--산업안전보건 실태조사-->
+        <img id="part2_data1" src="../img/part2_data1.svg">
+
+        <!--현장 취재 종합: 청소차 부위별 문제점-->
+
+        <div id="part2_problem">
+            <img src="../img/part2_problem_car_withcircle.JPG" onclick="action_coords(event)" alt="환경미화차량"
+                id="part2_problem_car" usemap="#problemmap" width="800" height="340">
+            <map name="problemmap">
+                <!--좌표는 offset(현재 오브젝트 기준 위치)기준이어야 함-->
+                <area id="back_foothold" shape="circle" coords="742, 272, 40">
+                <area id="vent_pipe" shape="circle" coords="652, 277, 20">
+            </map>
+            <div id="footholdModal" class="modal">
+                <div class="modal-content">
+                    <span id="footholdSpan" class="close">&times;</span>
+                    <p style="font-size: 25px; font-weight: 600; color:black">뒷발판</p><br>
+                    <!--부위 클릭 후 modal은 flex로 변함 + img에는 원래 float:left 속성 -> 글과 이미지 어울림-->
+                    <img src="../img/foothold_modal_content.jpg"
+                        style="width: 50%; float: left; margin-right: 10px; margin-bottom: 10px;">
+                    <p style="font-size: 18px; font-weight: 600; color:black">문제점</p>
+                    <p style="font-size: 16px; color:black">이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다.
+                        이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다.
+                        이미지에 대한 설명이 들어갑니다.</p><br>
+                    <p style="font-size: 18px; font-weight: 600; color:black">현행 해결방안</p>
+                    <p style="font-size: 16px; color:black">이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다.
+                        이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이
+                        들어갑니다.이미지에 대한 설명이 들어갑니다. </p>
+                </div>
+            </div>
+            <div id="ventpipeModal" class="modal">
+                <div class="modal-content">
+                    <span id="ventpipeSpan" class="close">&times;</span>
+                    <p style="font-size: 25px; font-weight: 600; color:black">배기관</p><br>
+                    <!--부위 클릭 후 modal은 flex로 변함 + img에는 원래 float:left 속성 -> 글과 이미지 어울림-->
+                    <img src="../img/ventpipe_modal_content.jpg"
+                        style="width: 50%; float: left; margin-right: 10px; margin-bottom: 10px;">
+                    <p style="font-size: 18px; font-weight: 600; color:black">문제점</p>
+                    <p style="font-size: 16px; color:black">이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다.
+                        이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다.
+                        이미지에 대한 설명이 들어갑니다.</p><br>
+                    <p style="font-size: 18px; font-weight: 600; color:black">현행 해결방안</p>
+                    <p style="font-size: 16px; color:black">이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다.
+                        이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다. 이미지에 대한 설명이 들어갑니다.
+                        이미지에 대한 설명이 들어갑니다. </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Part 3. 송파구 환경미화원 1인당 작업량 3.5t-->
+    <div id="part3">
+        <div id="article_title" class="article_title_serif">Part 3.</div>
+        <div id="article_title">송파구 환경미화원 1인당 작업량 3.5t</div>
+
+        <div id="part3_work_per1">
+            <div id="part3_work_per1_title">2020년 자치구별 작업량 현황</div>
+
+            <div class="part3_container">
+                <div id="part3_work_per1_sign">※목록에서 자치구 이름을 클릭해 2020년 환경미화원 작업량을 알아보세요.</div>
+
+                <div class="category_container" style="margin-top: 20px;">
+                    <div class="category" onclick="toggleImg()">A구</div>
+                    <div class="category" onclick="toggleImg2()">B구</div>
+                    <div class="category" onclick="toggleImg3()">C구</div>
+                    <div class="category" onclick="toggleImg()">D구</div>
+                    <div class="category" onclick="toggleImg2()">E구</div>
+                    <div class="category" onclick="toggleImg3()">F구</div>
+                    <div class="category" onclick="toggleImg()">G구</div>
+                    <div class="category" onclick="toggleImg2()">H구</div>
+                    <div class="category" onclick="toggleImg3()">I구</div>
+                    <div class="category" onclick="toggleImg()">J구</div>
+                    <div class="category" onclick="toggleImg2()">K구</div>
+                    <div class="category" onclick="toggleImg3()">L구</div>
+                    <div class="category" onclick="toggleImg()">M구</div>
+                    <div class="category" onclick="toggleImg2()">N구</div>
+                    <div class="category" onclick="toggleImg3()">O구</div>
+                </div>
+
+
+                <div id="img_district_container">
+                    <div id="part3_work_per1_imgcontainer">
+                        <img id="img" src="../img/map1.png" />
+                    </div>
+
+                    <!-- <select id="part3_district" name="part3_district" size="7" required autofocus>
+                        <option disabled selected>자치구 이름</option>
+                        <option onclick="toggleImg()" value="A구">A구</option>
+                        <option onclick="toggleImg2()" value="B구">B구</option>
+                        <option onclick="toggleImg3()" value="C구">C구</option>
+                        <option onclick="toggleImg()" value="D구">D구</option>
+                        <option onclick="toggleImg2()" value="E구">E구</option>
+                        <option onclick="toggleImg3()" value="F구">F구</option>
+                        <option onclick="toggleImg()" value="G구">G구</option>
+                        <option onclick="toggleImg2()" value="H구">H구</option>
+                        <option onclick="toggleImg3()" value="I구">I구</option>
+                        <option onclick="toggleImg()" value="J구">J구</option>
+                        <option onclick="toggleImg2()" value="K구">K구</option>
+                        <option onclick="toggleImg3()" value="L구">L구</option>
+                        <option onclick="toggleImg()" value="M구">M구</option>
+                        <option onclick="toggleImg2()" value="N구">N구</option>
+                        <option onclick="toggleImg3()" value="O구">O구</option>
+                    </select> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Part 4. 허울뿐인 ‘환경미화원 작업안전 가이드라인' -->
+    <div id="outro">
+        <div id="article_title" class="article_title_serif">Part 4.</div>
+        <div id="article_title">허울뿐인 ‘환경미화원 작업안전 가이드라인'</div>
+        <div class="article_title_small">전문가 인터뷰 - 환경미화원의 열악한 노동환경을 개선할 해결책</div>
+        <div id="outro_prgph1" style="width: 600px;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;모든 국민은 그 보호하는 자녀에게 적어도 초등교육과 법률이 정하는 교육을 받게 할 의무를 진다. 대통령은 국무총리·국무위원·행정각부의 장
+            기타 법률이 정하는 공사의 직을 겸할 수 없다. 공무원은 국민전체에 대한 봉사자이며, 국민에 대하여 책임을 진다. 대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다.
+            제안된 헌법개정안은 대통령이 20일 이상의 기간 이를 공고하여야 한다. 공공필요에 의한 재산권의 수용·사용 또는 제한 및 그에 대한 보상은 법률로써 하되, 정당한 보상을 지급하여야 한다. 모든
+            국민은 양심의 자유를 가진다. 대한민국은 민주공화국이다. 이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다. 국가는 대외무역을 육성하며, 이를 규제·조정할 수
+            있다. 국가는 사회보장·사회복지의 증진에 노력할 의무를 진다. 헌법재판소의 조직과 운영 기타 필요한 사항은 법률로 정한다. 이 헌법시행 당시의 대법원장과 대법원판사가 아닌 법관은 제1항 단서의
+            규정에 불구하고 이 헌법에 의하여 임명된 것으로 본다.
+            모든 국민은 인간다운 생활을 할 권리를 가진다. 광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을
+            특허할 수 있다. 국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는 국무위원 또는 정부위원으로
+            하여금 출석·답변하게 할 수 있다.<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;모든 국민은 그 보호하는 자녀에게 적어도 초등교육과 법률이 정하는 교육을 받게 할 의무를 진다. 대통령은 국무총리·국무위원·행정각부의 장
+            기타 법률이 정하는 공사의 직을 겸할 수 없다. 공무원은 국민전체에 대한 봉사자이며, 국민에 대하여 책임을 진다. 대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 제안된 헌법개정안은
+            대통령이 20일 이상의 기간 이를 공고하여야 한다. 공공필요에 의한 재산권의 수용·사용 또는 제한 및 그에 대한 보상은 법률로써 하되, 정당한 보상을 지급하여야 한다. 모든 국민은 양심의 자유를
+            가진다. 대한민국은 민주공화국이다. 이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.
+            국가는 대외무역을 육성하며, 이를 규제·조정할 수 있다. 국가는 사회보장·사회복지의 증진에 노력할 의무를 진다. 헌법재판소의 조직과 운영 기타 필요한 사항은 법률로 정한다. 이 헌법시행 당시의
+            대법원장과 대법원판사가 아닌 법관은 제1항 단서의 규정에 불구하고 이 헌법에 의하여 임명된 것으로 본다. 모든 국민은 인간다운 생활을 할 권리를 가진다. 광물 기타 중요한
+            지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을 특허할 수 있다.
+            국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는 국무위원 또는 정부위원으로 하여금 출석·답변하게
+            할 수 있다.<br><br>
+        </div>
+        <div id="outro_prgph2" style="width: 600px;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;모든 국민은 그 보호하는 자녀에게 적어도 초등교육과 법률이 정하는 교육을 받게 할 의무를 진다. 대통령은 국무총리·국무위원·행정각부의 장
+            기타 법률이 정하는 공사의 직을 겸할 수 없다. 공무원은 국민전체에 대한 봉사자이며, 국민에 대하여 책임을 진다. 대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 제안된 헌법개정안은
+            대통령이 20일 이상의 기간 이를 공고하여야 한다. 공공필요에 의한 재산권의 수용·사용 또는 제한 및 그에 대한 보상은 법률로써 하되, 정당한 보상을 지급하여야 한다. 모든 국민은 양심의 자유를
+            가진다. 대한민국은 민주공화국이다. 이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.
+            국가는 대외무역을 육성하며, 이를 규제·조정할 수 있다. 국가는 사회보장·사회복지의 증진에 노력할 의무를 진다. 헌법재판소의 조직과 운영 기타 필요한 사항은 법률로 정한다. 이 헌법시행 당시의
+            대법원장과 대법원판사가 아닌 법관은 제1항 단서의 규정에 불구하고 이 헌법에 의하여 임명된 것으로 본다.
+            모든 국민은 인간다운 생활을 할 권리를 가진다. 광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을
+            특허할 수 있다. 국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는 국무위원 또는 정부위원으로
+            하여금 출석·답변하게 할 수 있다.
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div id="project_name">Surfer</div>
+        <div id="copyright">2022. Project Surfer. All rights reserved.</div>
+    </footer>
+        
+
+
+
+
+    <!--스크롤 진행에 따라 Part 2. 도입부 내러티브 진행하도록 JS 시도중(보류)-->
+    <script>
+        // $(window).scroll(function(){
+        //     var 높이 = $(window).scrollTop();
+        //     console.log(높이);
+
+        //     // 13400~16300까지 스크롤바를 내리면,
+        //     // 3초동안 car_fromleft가 fadeinleft하고 falling_worker가 fadeindrop
+        //     $(#car_fromleft).css('animation',fadeInDrop 3s forwards;)
+        // })
+    </script>
+
+    <!--navbar js-->
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('#navbar').outerHeight();
+
+        $(window).scroll(function (event) {
+            didScroll = true;
+        });
+
+        setInterval(function () {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+
+            // Make sure they scroll more than delta
+            if (Math.abs(lastScrollTop - st) <= delta)
+                return;
+
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight) {
+                // Scroll Down
+                $('#navbar').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if (st + $(window).height() < $(document).height()) {
+                    $('#navbar').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+
+            lastScrollTop = st;
+        }
+    </script>
+
+    <!--toc_wrapper js-->
+    <script>
+        $(document).ready(function () {
+            var tmp = parseInt($("#toc_wrapper").css('top'));
+
+            $(window).scroll(function () {
+                var scrollTop = $(window).scrollTop();
+                var obj_position = scrollTop + tmp + "px";
+
+                $("#toc_wrapper").stop().animate({
+                    "top": obj_position
+                }, 500);
+
+            }).scroll();
+        });
+    </script>
+
+    <!--모바일 햄버거 버튼 js-->
+    <script>
+        // 모바일 햄버거 메뉴바 
+        let num = 0; 
+        let hamburger_button = document.querySelector('.mobile_hamburger_button');
+        $(hamburger_button).click(() => {
+            if(num % 2 == 0) {
+                hamburger_button.innerHTML = 'Ⅹ';  
+                $('.mobile_menu_container').css('height', '25vh');
+                $('.mobile_menu').css('height', '5vh');
+                setTimeout(()=>{
+                    $('.mobile_menu').css('display', 'block'); 
+                }, 150); 
+            } else {
+                hamburger_button.innerHTML = '&#9776;'; 
+                $('.mobile_menu_container').css('height', '0vh');
+                $('.mobile_menu').css('height', '0vh');
+                setTimeout(()=>{
+                    $('.mobile_menu').css('display', 'none'); 
+                }, 200); 
+            }
+            num += 1; 
+        })
+
+        let mobile_menus = document.querySelectorAll('.mobile_menu');
+        mobile_menus.forEach((mobile_menu) => {
+            $(mobile_menu).click(() => {
+                hamburger_button.innerHTML = '&#9776;'; 
+                $('.mobile_menu_container').css('height', '0vh');
+                $('.mobile_menu').css('height', '0vh');
+                setTimeout(()=>{
+                    $('.mobile_menu').css('display', 'none'); 
+                }, 200); 
+                num += 1; 
+            })
+        })
+    </script>
+    
+
+    <!--Part 2. 도입부 내러티브 aos 애니메이션-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: -100, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 3000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+
+    <!--Part 2. 청소차 부위별 문제점-->
+    <script>
+        // 청소차 이미지 클릭 시 좌표 출력
+        function action_coords(event) {
+            var x1 = event.clientX;
+            var y1 = event.clientY;
+            var x2 = event.offsetX;
+            var y2 = event.offsetY;
+            var x3 = event.screenX;
+            var y3 = event.screenY;
+            var coords = "clientX: " + x1 + ", clientY: " + y1 + "<br/>";
+            coords += "offsetX: " + x2 + ", offsetY: " + y2 + "<br/>";
+            coords += "screenX: " + x3 + ", screenY: " + y3;
+            console.log(coords);
+        }
+
+        var footholdModal = document.getElementById("footholdModal");
+        var foothold = document.getElementById("back_foothold");
+        var footholdSpan = document.getElementById("footholdSpan");
+
+        var ventpipeModal = document.getElementById("ventpipeModal");
+        var ventpipe = document.getElementById("vent_pipe");
+        var ventpipeSpan = document.getElementById("ventpipeSpan")
+
+
+        // 청소차 부위별 mouseenter시 동작
+        // function areaColor(event){
+        //     console.log(event.target);
+        //     event.target.style.border = "1px solid red";
+        // }
+
+        // function areaColorOut(event){
+        //     event.target.style.border = "none";
+        // }
+
+
+
+        foothold.onclick = function () {
+            footholdModal.style.display = "flex";
+        }
+        footholdSpan.onclick = function () {
+            footholdModal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == footholdModal) {
+                footholdModal.style.display = "none";
+            }
+        }
+
+        ventpipe.onclick = function () {
+            ventpipeModal.style.display = "flex";
+        }
+        ventpipeSpan.onclick = function () {
+            ventpipeModal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == ventpipeModal) {
+                ventpipeModal.style.display = "none";
+            }
+        }
+    </script>
+
+    <!--Part 3. 2020 자치구별 작업량 현황-->
+    <script>
+        function toggleImg() {
+            document.getElementById("img").src = "../img/map1.png";
+        }
+        function toggleImg2() {
+            document.getElementById("img").src = "../img/map2.png";
+        }
+        function toggleImg3() {
+            document.getElementById("img").src = "../img/map3.png";
+        }
+    </script>
+</body>
+
+</html>
