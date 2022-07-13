@@ -374,7 +374,8 @@ section .set div:nth-child(8) {
 }
 
 /* 산안 데이터 */
-#part2_data1 {
+#radar-chart{
+/* #part2_data1 { */
     display: block;
     margin: 0 auto;
     margin-top: 500px;

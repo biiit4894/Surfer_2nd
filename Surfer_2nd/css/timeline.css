@@ -138,3 +138,145 @@
     width: 33vw;
     margin-top: 10vh;
 } */
+
+.company-history {
+    margin-top: 80px;
+}
+
+.company-history .company-title-wrap {
+    margin-bottom: 40px;
+}
+
+.company-title-wrap {
+    margin: 80px 0 160px;
+    text-align: center;
+}
+
+.company-history-list {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.company-history .year {
+    /* padding: 120px 0; */
+    padding-top: 40px;
+    padding-right: 0px;
+    padding-bottom: 200px;
+    padding-left: 0px;
+}
+
+.company-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.company-history .year-head {
+    margin-bottom: 60px;
+}
+
+.year-head time {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.4285714286;
+    text-align: center;
+}
+
+.company-history .year-head-summary {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.company-history .month {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.company-history .month time {
+    width: 54px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.company-history .month-goal {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 526px;
+    flex: 0 1 526px;
+}
+
+.company-history .month-goal a {
+    color: #40b5eb;
+    border-bottom: 1px solid #40b5eb;
+}
+
+a {
+    text-decoration: inherit;
+}
+
+
+.animation {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    opacity: 1;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0;
+}
+
+.company-history .month-goal-desc {
+    margin-top: 6px;
+    color: #6c6d6f;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+@media (max-width: 750px){
+
+.company-history-list {
+        margin: 0 24px;
+    }
+.company-history .month-goal {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(100% - 54px);
+        flex: 0 1 calc(100% - 54px);
+    }
+
+.company-history .year {
+    padding: 80px 0;
+}
+.company-history .year-head time {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 1.4;
+}
+.company-history .year-head-summary {
+    font-size: 16px;
+    line-height: 1.75;
+}
+.company-history .month-goal-desc {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 1.7142857143;
+}
+
+}
