@@ -1,0 +1,207 @@
+/* 랜딩 페이지 */
+#banner {
+    /* border-radius: 20px; */
+    /* padding: 20px;
+    background-color: #ffffff; */
+    line-height: 230%;
+    font-size: 38px;
+    margin-top: 13vh;
+    /* font-weight: 300; */
+    /* box-shadow: 3px 3px 10px rgb(170, 169, 169); */
+}
+
+#banner #surfer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    color: #333333;
+    background: linear-gradient(to top, transparent 3%, #a6d5ed 10%, #a6d5ed 30%, transparent 40%);
+}
+
+#highlight {
+    text-decoration: 3px #a6d5ed wavy underline;
+}
+
+#chungwon,
+#sanitary_worker {
+    display: inline-block;
+}
+
+a#chungwon,
+a#sanitary_worker {
+    color: #333333;
+    font-weight: 400;
+    text-decoration: none;
+    background: linear-gradient(to top, transparent 24%, #40b5eb 24%, #40b5eb 27%, transparent 27%) ;
+}
+a:visited {
+    color: #333333;
+}
+#scrolldowndiv {
+    text-align: center;
+    margin-top: 6vh;
+
+}
+
+/* 스크롤 유도 아이콘 - 부드러운 스크롤 적용 필요*/
+.scroll_icon {
+    text-decoration: none;
+}
+
+.scroll_icon span {
+    position: absolute;
+    left: 50%;
+    top: 80vh;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1.5px solid #686868;
+    border-bottom: 1.5px solid #686868;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb 2s infinite;
+    animation: sdb 2s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+}
+.scroll_icon span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+.scroll_icon span:nth-of-type(2) {
+    top: 83vh;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+}
+.scroll_icon span:nth-of-type(3) {
+    top: 86vh;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+}
+
+@-webkit-keyframes sdb {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes sdb {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/*media query*/
+@media screen and (max-width: 500px) {
+    #banner {
+        /* border-radius: 20px; */
+        /* padding: 20px;
+        background-color: #ffffff; */
+        line-height: 200%;
+        font-size: 30px;
+        margin-top: 13vh;
+        /* font-weight: 300; */
+        /* box-shadow: 3px 3px 10px rgb(170, 169, 169); */
+    }
+    
+    #banner #surfer {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 60px;
+        font-weight: 800;
+        color: #333333;
+        background: linear-gradient(to top, transparent 3%, #a0e1ff 10%, #a0e1ff 30%, transparent 40%);
+    }
+}
+
+/*scroll icon 고치자!!!!!!!!!*/
+@media screen and (min-height: 0px) {
+    .scroll_icon {
+        text-decoration: none;
+    }
+
+    .scroll_icon span {
+        position: absolute;
+        left: 50%;
+        top: 2000px;
+        width: 24px;
+        height: 24px;
+        margin-left: -12px;
+        border-left: 1.5px solid #686868;
+        border-bottom: 1.5px solid #686868;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-animation: sdb 2s infinite;
+        animation: sdb 2s infinite;
+        opacity: 0;
+        box-sizing: border-box;
+    }
+
+    .scroll_icon span:nth-of-type(1) {
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+    }
+
+    .scroll_icon span:nth-of-type(2) {
+        top: 83vh;
+        -webkit-animation-delay: .15s;
+        animation-delay: .15s;
+    }
+
+    .scroll_icon span:nth-of-type(3) {
+        top: 86vh;
+        -webkit-animation-delay: .3s;
+        animation-delay: .3s;
+    }
+}
+
+@media screen and (height: 100%) {
+    .scroll_icon {
+        text-decoration: none;
+    }
+
+    .scroll_icon span {
+        position: absolute;
+        left: 50%;
+        top: 100vh;
+        width: 24px;
+        height: 24px;
+        margin-left: -12px;
+        border-left: 1.5px solid #686868;
+        border-bottom: 1.5px solid #686868;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-animation: sdb 2s infinite;
+        animation: sdb 2s infinite;
+        opacity: 0;
+        box-sizing: border-box;
+    }
+
+    .scroll_icon span:nth-of-type(1) {
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+    }
+
+    .scroll_icon span:nth-of-type(2) {
+        top: 83vh;
+        -webkit-animation-delay: .15s;
+        animation-delay: .15s;
+    }
+
+    .scroll_icon span:nth-of-type(3) {
+        top: 86vh;
+        -webkit-animation-delay: .3s;
+        animation-delay: .3s;
+    }
+}
+  

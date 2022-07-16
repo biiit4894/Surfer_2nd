@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>SURFER</title>
+
+
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="../css/surfer_archive.css">
+  <link rel="stylesheet" type="text/css" href="../css/banner.css">
+  <link rel="stylesheet" type="text/css" href="../css/ourwaves.css">
+  <link rel="stylesheet" type="text/css" href="../css/timeline.css">
+  <link rel="stylesheet" type="text/css" href="../css/aboutUs.css">
+  <link rel="stylesheet" type="text/css" href="../css/footer.css">
+
+  <style>
+    /* surfer_archive.html에 기본적으로 적용되는 css -> surfer_archive.css로 이동 */
+    /* navbar, banner, ourwaves, timeline, aboutus, footer 각각의 css는 분리 */
+  </style>
+
+</head>
+
+<body>
+  <div id="top_container">
+
+    <!-- navbar-->
+    <div class="navbar">
+      <div class="left_item">
+        <a class="linked_icon" href=""><img id="surfer_icon" href="" src="../img/sea-waves.png"></a>
+      </div>
+      <div class="center_items">
+        <a class="linked_icon" href="https://github.com/biiit4894/Surfer_2nd"><img id="github_icon"
+            src="../img/github.png"></a>
+        <a class="linked_icon" href=""><img id="notion_icon" href="" src="../img/notion.png"></a>
+      </div>
+    </div>
+
+    <div id="content_container">
+
+      <!-- banner(랜딩페이지), scroll icon) -->
+      <div id="banner" style="font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+      font-weight: 200;">
+
+        <span id="surfer">Surfer</span>는 <span id="highlight" class="surfer_line1" style="opacity: 0;">파도치는 데이터
+          속에서 새로운 물결을 발견하는 사람들</span>의 모임입니다.<br>
+        <span class="surfer_line2" style="opacity: 0;">지난 3월, 대선을 앞두고 <span id="chungwon"><a id="chungwon"
+              href="https://projectsurfer.netlify.app/">5년간의 국민청원 데이터</a></span>를 되돌아봤습니다.</span><br>
+        <span class="surfer_line3" style="opacity: 0;">그리고 6월, <span id="sanitary_worker"><a id="sanitary_worker"
+              href="https://projectsurfer.netlify.app/">환경미화원 처우</a></span>를 데이터를 통해
+          조망하였습니다.</span><br>
+        <span class="surfer_line4" style="opacity: 0;">데이터에 입각하여 주목받지 못한 이야기를 찾고, 누구나 즐길 수 있는 기사를 작성합니다.</span>
+        <!-- <div id="scrolldowndiv"><a href="#archive" id="scrolldown">Surfer의 기사 구경하기</a></div> -->
+
+      </div>
+      <!-- <div class="scroll_icon_wrap" style="opacity: 0">
+        <a class="scroll_icon" href="#team-title-ourwaves">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div> -->
+
+
+
+      <main class="container">
+
+        <!-- Our Waves. -->
+        <div>
+          <div class="team-wrap">
+            <h2 class="category_title" id="team-title-ourwaves">Our Waves.</h2>
+            <div class="click">※이미지 클릭 시 기사 전문으로 이동합니다.</div>
+
+
+            <!-- 스와이퍼 구현 -->
+            <div class="team-swiper">
+              <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="width: 272px; margin-right: 40px;">
+
+                      <!-- 첫번째 기획     -->
+                      <div class="user-thumbs">
+                        <a href="https://projectsurfer.netlify.app/" target="_blank">
+                          <!--a태그 이미지에 링크 걸어놓기 -->
+                          <img src="../img/SURFER1.png" alt="기획1_문정부의 음성사서함">
+                      </div>
+                      </a>
+
+                      <span class="pub_date">22.03.03</span>
+                      <span class="pub_num">Our First Wave</span>
+                      <span class="pub_title">문정부의 음성사서함</span>
+                    </div>
+
+                    <!-- 두번째 기획     -->
+                    <div class="swiper-slide" style="width: 272px; margin-right: 40px;">
+                      <div class="user-thumbs">
+                        <a href="https://projectsurfer.netlify.app/" target="_blank">
+                        <img src="../img/SURFER2.png" alt="기획2_환경미화원,그 뒷편의 이야기들">
+                      </div>
+                    </a>
+                      <span class="pub_date">22.06.30</span>
+                      <span class="pub_num">Our Second Wave</span>
+                      <span class="pub_title">환경미화원, 뒷편의 이야기들</span>
+                    </div>
+
+                    <!-- 세번째 기획     -->
+                    <div class="swiper-slide" style="width: 272px; margin-right: 40px;">
+
+                      <div class="user-thumbs">
+                        <img src="../img/Q.png" alt="세번째 기획">
+                      </div>
+
+                      <span class="pub_date">Coming Soon..</span>
+                      <span class="pub_num">Our Third Wave</span>
+                      <span class="pub_title">?</span>
+                    </div>
+
+                    <!-- 네번째 기획     -->
+                    <div class="swiper-slide" style="width: 272px; margin-right: 40px;">
+
+                      <div class="user-thumbs">
+                        <img src="../img/Q.png" alt="마지막기획">
+                      </div>
+
+                      <span class="pub_date">Coming Soon..</span>
+                      <span class="pub_num">Our Final Wave</span>
+                      <span class="pub_title">?</span>
+
+                    </div>
+                  </div>
+
+                  <!-- 스와이퍼 화살표 구현 -->
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- Timeline. -->
+        <div class="timeline">
+          <div class="category_title">Timeline.</div>
+          <span class="timeline_descrip">Our waves through time</span><br>
+          <section class="surfer_timeline">
+            <h1></h1>
+            <ol>
+              <li>
+                <div id="timeline_box_one">
+                  <time>2022.01</time>
+                  데이터 저널리즘 동아리 Surfer 결성
+                </div>
+              </li>
+              <li>
+                <div id="timeline_box_two">
+                  <time>2022.03.03</time>
+                  Surfer의 첫번째 기획 배포<br>
+                  '문 정부의 음성사서함, 해결하지 못한 메시지'
+                </div>
+              </li>
+              <li>
+                <div id="timeline_box_three">
+                  <time>2022.06.??</time>
+                  Surfer의 두번째 기획 배포<br>
+                  '환경미화원, 그 뒤편의 이야기들'
+                </div>
+              </li>
+              <li>
+                <div id="timeline_box_four">
+                  <time>2022.07~2022.09</time>
+                  <text>Coming Soon...</text>
+                </div>
+              </li>
+              <li></li>
+            </ol>
+          </section>
+          <!-- <img class="timeline_png_2" src="images/timeline-vertical.png"> -->
+        </div>
+
+        <div class="container">
+          <div>
+
+            <!-- about Us. -->
+            <div>
+              <section id="team" class="team-wrap">
+                <h2 class="category_title">about Us.</h2>
+
+                <ul class="team">
+
+                  <li class="team">
+                    <a href="https://cherry-peace-92e.notion.site/9b93ee98eccb48568f32e4500fda6186" target="_blank" class="team">
+                      <img src="../img/sung.png" alt="박성영" class="team">
+                      <span>journalist</span>
+                      <br>
+                      <span>seongyoung PARK</span>
+                    </a>
+                  </li>
+
+                  <li class="team">
+                    <a href="https://www.notion.so/5b971061c5494702a196e08b4e46abb1" target="_blank" class="team">
+                      <img src="../img/you1.png" alt="이유민" class="team">
+                      <span>journalist</span>
+                      <br>
+                      <span>youmin LEE</span>
+                    </a>
+                  </li>
+
+                  <li class="team">
+                    <a href="https://cherry-peace-92e.notion.site/d1610fd18e584a93bd7de1a54af9eeae" target="_blank" class="team">
+                      <img src="../img/sejin.png" alt="정세진" class="team">
+                      <span>journalist</span>
+                      <br>
+                      <span>sejin CHEONG</span>
+                    </a>
+                  </li>
+
+                  <li class="team">
+                    <a href="https://cherry-peace-92e.notion.site/Eunsu-Cho-4971aaa873d7480c8282311db6cc0c01" target="_blank"
+                      class="team">
+                      <img src="../img/eunsu.png" alt="조은수" class="team">
+                      <span>journalist</span>
+                      <br>
+                      <span>eunsu CHO</span>
+                    </a>
+                  </li>
+
+                  <li class="team">
+                    <a href="https://cherry-peace-92e.notion.site/2e13ac9db9b0411e868061871df28eb6" target="_blank" class="team">
+                      <img src="../img/yejin.png" alt="김예진" class="team">
+                      <span>developer</span>
+                      <br>
+                      <span>yejin KIM</span>
+                    </a>
+                  </li>
+
+                  <li class="team">
+                    <a href="https://cherry-peace-92e.notion.site/1a2f94777dae4536bfba3ff80faea89d" target="_blank" class="team">
+                      <img src="../img/han.png" alt="장한빛" class="team">
+                      <span>developer</span>
+                      <br>
+                      <span>hanbit JANG</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </section>
+
+
+
+
+            </div>
+
+
+      </main>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="project_name">Surfer</div>
+    <div class="copyright">2022. Project Surfer. All rights reserved.</div>
+  </footer>
+
+
+
+  <!--navbar js : 잘 안돼서 수정필요-->
+  <script>
+    // Hide Header on on scroll down
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('#navbar').outerHeight();
+
+    $(window).scroll(function (event) {
+      didScroll = true;
+    });
+
+    setInterval(function () {
+      if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+      }
+    }, 250);
+
+    function hasScrolled() {
+      var st = $(this).scrollTop();
+
+      // Make sure they scroll more than delta
+      if (Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+      // If they scrolled down and are past the navbar, add class .nav-up.
+      // This is necessary so you never see what is "behind" the navbar.
+      if (st > lastScrollTop && st > navbarHeight) {
+        // Scroll Down
+        $('#navbar').removeClass('nav-down').addClass('nav-up');
+      } else {
+        // Scroll Up
+        if (st + $(window).height() < $(document).height()) {
+          $('#navbar').removeClass('nav-up').addClass('nav-down');
+        }
+      }
+
+      lastScrollTop = st;
+    }
+  </script>
+
+  <!--banner js-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../js/banner.js"></script>
+
+  <!-- 스와이퍼 js -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      centeredSlides: true,
+      initialSlide: 1,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+
+</body>
+
+</html>
