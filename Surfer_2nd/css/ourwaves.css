@@ -45,13 +45,15 @@ h2 {
 .team-swiper {
     position: relative;
     width: 1000px;
-    margin: 0 auto;
+    max-width: 980px;
+    margin: 0 auto; 
     text-align: center;
-    margin-top: -85px;  /* bigtitle과 사진 사이 간격; 화살표랑 같이 움직임*/
+    margin-top: -85px;
+    /* bigtitle과 사진 사이 간격; 화살표랑 같이 움직임*/
 }
 .team-swiper .swiper-container {
     width: 896px;
-}
+} 
 .swiper-container {
     margin-left: auto;
     margin-right: auto;
